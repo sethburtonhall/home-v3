@@ -32,7 +32,7 @@ export default function Index() {
   return (
     <div>
       <Navbar />
-      <div>Test</div>
+      <div>Another Test</div>
       <Outlet />
       <Footer />
     </div>
