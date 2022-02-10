@@ -32,6 +32,7 @@ export default function Index() {
   return (
     <div>
       <Navbar />
+      <div>Test</div>
       <Outlet />
       <Footer />
     </div>
