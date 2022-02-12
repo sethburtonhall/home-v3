@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <footer className="flex justify-between items-center p-3">
+      <div className="">Footer</div>
+    </footer>
+  );
 }

@@ -1,40 +1,57 @@
-import { Outlet } from 'remix';
+import { Outlet, useLoaderData } from 'remix';
 import type { LoaderFunction, MetaFunction } from 'remix';
 
 // pass into React Context?
-import { fetchAPI } from '../../lib/api';
-import { getStrapiMedia } from '../../lib/media';
+import { fetchAPI } from '~/utils/api';
+// import { getStrapiMedia } from '~/utils/media';
 
-import { Navbar, Footer } from '~/components';
+import { Header, Footer } from '~/components';
 
 export const loader: LoaderFunction = async () => {
-  const globalRes = await fetchAPI('/global', {
-    // figure out this object structure vs the json object output
+  const global = await fetchAPI('/global', {
     populate: {
       favicon: '*',
       defaultSeo: {
         populate: '*',
       },
+      navigation: {
+        populate: '*',
+      },
     },
   });
 
-  return globalRes.data;
+  const { attributes } = global.data;
+  return attributes;
 };
 
 export const meta: MetaFunction = ({ data }) => {
   return {
-    title: `${data.attributes.defaultSeo.metaTitle}`,
-    description: `${data.attributes.defaultSeo.metaDescription}`,
+    title: `${data.defaultSeo.metaTitle}`,
+    description: `${data.defaultSeo.metaDescription}`,
+  };
+};
+
+type GlobalProps = {
+  // add more global based props here
+  navigation: {
+    id: number;
+    links: { id: string; label: string; href: string }[];
   };
 };
 
 export default function Index() {
+  const data = useLoaderData<GlobalProps>();
+  const { navigation } = data;
+
   return (
-    <div>
-      <Navbar />
-      <div>Another Test</div>
-      <Outlet />
-      <Footer />
+    <div className="background">
+      <div className="container mx-auto flex flex-col h-screen">
+        <Header navigation={navigation} />
+        <div className="flex-grow">
+          <Outlet />
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }

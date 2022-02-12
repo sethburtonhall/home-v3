@@ -1,7 +1,7 @@
 import { useLoaderData } from 'remix';
 import type { LoaderFunction, MetaFunction } from 'remix';
-import { fetchAPI } from '../../../lib/api';
-import { getStrapiMedia } from '../../../lib/media';
+import { fetchAPI } from '~/utils/api';
+import { getStrapiMedia } from '~/utils/media';
 
 export const loader: LoaderFunction = async () => {
   const globalRes = await fetchAPI('/global', {
@@ -20,7 +20,7 @@ export default function Index() {
   const global = useLoaderData();
 
   return (
-    <div>
+    <>
       <h1 className="text-3xl font-bold underline text-red-500">Hello Remix</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -32,6 +32,6 @@ export default function Index() {
         duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed
         blandit libero volutpat.
       </p>
-    </div>
+    </>
   );
 }
