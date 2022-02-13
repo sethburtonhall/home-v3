@@ -1,24 +1,4 @@
-import { useLoaderData } from 'remix';
-import type { LoaderFunction, MetaFunction } from 'remix';
-import { fetchAPI } from '~/utils/api';
-import { getStrapiMedia } from '~/utils/media';
-
-export const loader: LoaderFunction = async () => {
-  const globalRes = await fetchAPI('/global', {
-    populate: {
-      favicon: '*',
-      defaultSeo: {
-        populate: '*',
-      },
-    },
-  });
-
-  return globalRes.data;
-};
-
 export default function Index() {
-  const global = useLoaderData();
-
   return (
     <>
       <h1 className="text-3xl font-bold underline text-red-500">Hello Remix</h1>

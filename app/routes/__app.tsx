@@ -10,7 +10,6 @@ import { Header, Footer } from '~/components';
 export const loader: LoaderFunction = async () => {
   const global = await fetchAPI('/global', {
     populate: {
-      favicon: '*',
       defaultSeo: {
         populate: '*',
       },

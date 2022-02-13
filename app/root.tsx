@@ -55,7 +55,7 @@ function App() {
   const data = useLoaderData<LoaderData>();
 
   return (
-    // https://www.mattstobbs.com/remix-dark-mode/
+    // https://www.mattstobbs.com/remix-dark-mode/ Nice one!! 😎 🤯
     <html lang="en" className={clsx(theme)}>
       <head>
         <meta charSet="utf-8" />
