@@ -96,6 +96,8 @@ export default function SocialIcons() {
       </a>
       <a
         href="mailto:sethburtonhall@gmail.com"
+        target="_blank"
+        rel="noopener"
         className="social-icon"
         title="Email"
       >

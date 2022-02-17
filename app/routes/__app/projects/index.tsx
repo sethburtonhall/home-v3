@@ -25,7 +25,7 @@ export default function Projects() {
   console.log(repos);
   return (
     <div>
-      <h1 className="text-3xl text-red-500 underline">Projects</h1>
+      <h1>Projects</h1>
       {repos.map((repo: repoProps) => (
         <div key={repo.id}>
           <a href={repo.html_url}>{repo.name}</a>
