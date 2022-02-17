@@ -1,4 +1,3 @@
-import { Link } from 'remix';
 // all icons are https://heroicons.com/ except https://remixicon.com/ for LinkedIn
 export default function SocialIcons() {
   return (
@@ -90,7 +89,7 @@ export default function SocialIcons() {
         href="https://dev.to/sethburtonhall"
         target="_blank"
         rel="noopener"
-        className="flex from-indigo-500 to-indigo-600 text-base hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent"
+        className="mb-[-3px] flex from-indigo-500 to-indigo-600 text-base hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent"
         title="Dev.to"
       >
         DEV

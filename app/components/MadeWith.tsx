@@ -14,14 +14,6 @@ export default function MadeWith() {
       </div>
       <div>
         <a
-          href="https://strapi.io/"
-          target="_blank"
-          rel="noopener"
-          className="mx-1 rounded bg-indigo-700 px-2 pt-1 pb-1"
-        >
-          Strapi
-        </a>{' '}
-        <a
           href="https://remix.run/"
           target="_blank"
           rel="noopener"

@@ -6,9 +6,7 @@ import {
   placeholder,
 } from '@cloudinary/react';
 
-import CurrentStack from './CurrentStack';
-// remove this once I strip out Strapi
-// import { getStrapiMedia } from '~/utils/media';
+import { CurrentStack } from '.';
 
 export default function Hero() {
   const image = new CloudinaryImage('home-v3/seth_hero', {
@@ -20,11 +18,7 @@ export default function Hero() {
       <div className="order-2 w-2/3 md:order-1 md:col-span-2 md:w-full md:pr-12">
         <AdvancedImage
           cldImg={image}
-          plugins={[
-            lazyload(),
-            responsive({ steps: 200 }),
-            placeholder({ mode: 'vector' }),
-          ]}
+          plugins={[lazyload(), responsive({ steps: 200 }), placeholder()]}
           alt="Seth Hall"
         />
       </div>

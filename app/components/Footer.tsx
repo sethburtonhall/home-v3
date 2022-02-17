@@ -1,5 +1,5 @@
-import SocialIcons from './SocialIcons';
-import MadeWith from './MadeWith';
+import { SocialIcons } from '.';
+import { MadeWith } from '.';
 
 export default function Footer() {
   return (

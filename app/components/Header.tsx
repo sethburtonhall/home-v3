@@ -1,16 +1,9 @@
 import { Navbar } from '.';
 
-export type NavigationProps = {
-  navigation: {
-    id: number;
-    links: { id: string; label: string; href: string }[];
-  };
-};
-
-export default function Header({ navigation }: NavigationProps) {
+export default function Header() {
   return (
     <div>
-      <Navbar navigation={navigation} />
+      <Navbar />
     </div>
   );
 }

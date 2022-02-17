@@ -1,9 +1,25 @@
 import { Link } from 'remix';
 import { Theme, useTheme } from '~/utils/theme-provider';
-import type { NavigationProps } from './Header';
 
-export default function Navbar({ navigation }: NavigationProps) {
-  const { links } = navigation;
+const links = [
+  {
+    id: 1,
+    label: 'Articles',
+    href: '/articles',
+  },
+  {
+    id: 2,
+    label: 'Projects',
+    href: '/projects',
+  },
+  {
+    id: 3,
+    label: 'Resume',
+    href: '/resume',
+  },
+];
+
+export default function Navbar() {
   const [theme, setTheme] = useTheme();
 
   const toggleTheme = () => {

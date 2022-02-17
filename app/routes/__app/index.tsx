@@ -1,4 +1,4 @@
-import Hero from '~/components/Hero';
+import { Hero } from '~/components';
 
 export default function Index() {
   return <Hero />;

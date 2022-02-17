@@ -560,27 +560,9 @@ h1{
   color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
-.styled-link--alt{
-  cursor: default;
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-  --tw-gradient-from: #312e81;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(49 46 129 / 0));
-  --tw-gradient-to: #3730a3;
-  background-size: 4px 80px;
-  background-position: right top;
-  background-repeat: repeat-x;
-  padding: 0.25rem;
-  font-weight: 600;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.styled-link--alt:hover{
-  background-size: 4px 4px;
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
-}
+/* .styled-link--alt {
+    @apply cursor-default bg-gradient-to-b from-indigo-900 to-indigo-800  bg-[length:4px_80px] bg-right-top bg-repeat-x p-1 font-semibold transition-all hover:bg-[length:4px_4px] hover:text-slate-100;
+  } */
 
 /* this class cleans up SocialIcons.tsx */
 
@@ -677,6 +659,14 @@ h1{
 
 .ml-2{
   margin-left: 0.5rem;
+}
+
+.mb-\[-3px\]{
+  margin-bottom: -3px;
+}
+
+.mb-\[-8px\]{
+  margin-bottom: -8px;
 }
 
 .flex{

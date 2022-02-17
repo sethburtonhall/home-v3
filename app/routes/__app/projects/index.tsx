@@ -12,9 +12,7 @@ type repoProps = {
 };
 
 export const loader: LoaderFunction = async () => {
-  const res = await fetch(
-    'https://api.github.com/users/sethburtonhall/repos?per_page=100'
-  );
+  const res = await fetch('https://api.github.com/users/sethburtonhall/repos');
   const repos = await res.json();
   const filteredRepos = repos.filter((repo: LoaderData) =>
     repo.topics.includes('ui')

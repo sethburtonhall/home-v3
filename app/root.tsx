@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from 'remix';
-import type { LinksFunction, LoaderFunction } from 'remix';
+import type { LinksFunction, MetaFunction, LoaderFunction } from 'remix';
 
 import clsx from 'clsx';
 
@@ -17,7 +17,6 @@ import {
   useTheme,
 } from './utils/theme-provider';
 import type { Theme } from '~/utils/theme-provider';
-
 import { getThemeSession } from '~/utils/theme.server';
 
 import styles from './styles/app.css';
@@ -32,8 +31,24 @@ export const links: LinksFunction = () => {
       rel: 'stylesheet',
       href: styles,
     },
-    // add fonts here
   ];
+};
+
+export const meta: MetaFunction = () => {
+  const description = 'Seth Hall | Web Developer';
+
+  return {
+    title: description,
+    description,
+    keywords: 'Seth Hall, web developer',
+    'twitter:image':
+      'https://res.cloudinary.com/seth-hall/image/upload/v1644975921/home-v3/social.png',
+    'twitter:card': 'summary_large_image',
+    'twitter:creator': '@sethburtonhall',
+    'twitter:site': '@sethburtonhall',
+    'twitter:title': 'Seth Hall | Web Developer',
+    'twitter:description': description,
+  };
 };
 
 export type LoaderData = {
