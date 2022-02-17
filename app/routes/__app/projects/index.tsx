@@ -1,10 +1,14 @@
 import { useLoaderData } from 'remix';
 import type { LoaderFunction } from 'remix';
 
-import Github from '~/components/Github';
-
 type LoaderData = {
   topics: string | string[];
+};
+
+type repoProps = {
+  id: string;
+  html_url: string;
+  name: string;
 };
 
 export const loader: LoaderFunction = async () => {
@@ -20,10 +24,15 @@ export const loader: LoaderFunction = async () => {
 
 export default function Projects() {
   const repos = useLoaderData<any>();
+  console.log(repos);
   return (
     <div>
-      <h1 className="text-3xl font-bold underline text-red-500">Projects</h1>
-      <Github repos={repos} />
+      <h1 className="text-3xl text-red-500 underline">Projects</h1>
+      {repos.map((repo: repoProps) => (
+        <div key={repo.id}>
+          <a href={repo.html_url}>{repo.name}</a>
+        </div>
+      ))}
     </div>
   );
 }

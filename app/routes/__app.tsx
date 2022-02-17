@@ -43,8 +43,8 @@ export default function Index() {
   const { navigation } = data;
 
   return (
-    <div className="background">
-      <div className="container mx-auto flex flex-col h-screen">
+    <div className="bg-slate-50 from-slate-900 to-slate-800 dark:bg-gradient-to-r">
+      <div className="container mx-auto flex flex-col lg:h-screen">
         <Header navigation={navigation} />
         <div className="flex-grow">
           <Outlet />

@@ -1,16 +1,64 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Signika:wght@400;500;600&family=Ubuntu:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* @apply text-slate-300; */
-  @apply text-slate-900 dark:text-blue-500;
+@layer base {
+  body {
+    @apply font-serif text-xl text-slate-900 dark:text-slate-100;
+  }
+
+  h1 {
+    @apply mb-3 bg-gradient-to-b from-indigo-900 to-indigo-800 p-2 font-sans text-6xl font-bold text-slate-100 dark:text-slate-100;
+  }
 }
 
-a {
-  @apply text-blue-500;
+@layer components {
+  /* styled link with that adds background on hover */
+  .styled-link {
+    @apply bg-gradient-to-b from-indigo-900 to-indigo-800 bg-[length:4px_4px] bg-right-bottom bg-repeat-x p-1 font-semibold transition-all hover:bg-[length:4px_80px] hover:text-slate-100;
+  }
+
+  .styled-link--alt {
+    @apply cursor-default bg-gradient-to-b from-indigo-900 to-indigo-800  bg-[length:4px_80px] bg-right-top bg-repeat-x p-1 font-semibold transition-all hover:bg-[length:4px_4px] hover:text-slate-100;
+  }
+
+  /* this class cleans up SocialIcons.tsx */
+  .social-icon {
+    @apply text-slate-900 transition hover:text-indigo-500 dark:text-slate-100;
+  }
+
+  /* .blob {
+    width: 200px;
+    height: 200px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    animation: morph 5s linear infinite;
+  }
+
+  @keyframes morph {
+    0%,
+    100% {
+      border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  } */
 }
 
-.background {
-  @apply bg-slate-50 dark:bg-gradient-to-r from-slate-900 to-slate-800;
+@layer utilities {
+  /* this class adds styles don't translate well to Tailwind */
+  .glass {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+  }
 }
