@@ -1,11 +1,18 @@
 import { Link, useLoaderData } from 'remix';
 import type { LoaderFunction } from 'remix';
 
-type ArticleProps = {
-  id: string;
-  html_url: string;
-  name: string;
-};
+export interface DevToArticleMeta {
+  id: number;
+  title: string;
+  description: string;
+  readable_publish_date: string;
+  url: string;
+  public_reactions_count: string;
+  positive_reactions_count: string;
+  cover_image: string;
+  tag_list: Array<string>;
+}
+[];
 
 export const loader: LoaderFunction = async () => {
   let articles = await fetch(
@@ -17,30 +24,47 @@ export const loader: LoaderFunction = async () => {
 
 export default function Articles() {
   const articles = useLoaderData();
-  console.log(articles);
+  console.log('articles', articles);
   return (
-    <div>
-      <h1>Articles</h1>
-      <div className="grid grid-cols-4 gap-6">
-        {articles.map(({ id, title, description, cover_image } = articles) => (
-          <div key={id} className="rounded-md bg-slate-100 text-zinc-900">
-            <Link to={`${id}`}>
-              <img src={cover_image} alt={title} className="rounded-md" />
-              <div className="p-4">
-                <h2 className="mb-2 font-sans">
-                  <Link
-                    to={`/articles/${title.toLowerCase().replace(/\s/g, '-')}`}
-                    prefetch="intent"
-                  >
-                    {title}
-                  </Link>
-                </h2>
-                <p className="font-serif text-base">{description}</p>
-              </div>
-            </Link>
+    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+      {articles.map((article: DevToArticleMeta) => (
+        <div
+          key={article.id}
+          className="mx-auto max-w-2xl overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-800"
+        >
+          <img
+            className="h-64 w-full object-cover"
+            src={article.cover_image}
+            alt={article.title}
+          />
+
+          <div className="p-6">
+            <div>
+              {article.tag_list.map((tag: string) => (
+                <span className="mr-3 text-xs font-medium uppercase text-blue-500 dark:text-blue-500">
+                  #{tag}
+                </span>
+              ))}
+              <Link
+                to={`/articles/${article.id}`}
+                prefetch="intent"
+                className="dark:focus-outline-none mt-2 block transform text-2xl font-semibold transition-colors duration-200 hover:text-blue-500 focus:outline-none dark:hover:text-blue-500"
+              >
+                {article.title}
+              </Link>
+              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                {article.description}
+              </p>
+            </div>
+
+            <div className="mt-4">
+              <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                {article.readable_publish_date}
+              </span>
+            </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }

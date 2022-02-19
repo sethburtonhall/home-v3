@@ -6,6 +6,7 @@ module.exports = {
       logo: ['Signika', 'display'],
       sans: ['Ubuntu', 'sans'],
       serif: ['Open Sans', 'serif'],
+      terminal: ['Inconsolata', 'monospace'],
     },
   },
   plugins: [],

@@ -26,7 +26,7 @@ export default function CurrentStack() {
         </div>
         <div className="rounded bg-indigo-600 p-1 text-gray-900">APIs</div>
         <div className="rounded bg-yellow-500 p-1 text-gray-900">Firebase</div>
-        <div className="rounded bg-black p-1 text-slate-100">SQL</div>
+        <div className="rounded bg-black p-1 text-slate-50">SQL</div>
       </div>
     </div>
   );
