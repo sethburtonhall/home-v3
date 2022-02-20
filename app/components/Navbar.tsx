@@ -1,11 +1,19 @@
 import { Fragment } from 'react';
-import { Link } from 'remix';
+import { NavLink, Link } from 'remix';
 import { Theme, useTheme } from '~/utils/theme-provider';
 
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
-const navigationItems = [
+let logo = (
+  <Link to="/" className="md:styled-link font-logo text-2xl md:text-5xl">
+    Seth Hall
+  </Link>
+);
+let activeClassName =
+  'from-blue-500 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent';
+
+let navigationItems = [
   {
     id: 1,
     label: 'Articles',
@@ -22,15 +30,18 @@ const navigationItems = [
     href: '/resume',
   },
 ];
-
-const navigation = navigationItems.map((link) => (
-  <Link
+let navigation = navigationItems.map((link) => (
+  <NavLink
     key={link.id}
-    className="from-blue-500 to-blue-600 p-3 text-xl font-semibold hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent"
     to={link.href}
+    className="from-blue-500 to-blue-600 p-3 text-xl font-semibold hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent"
   >
-    {link.label}
-  </Link>
+    {({ isActive }) => (
+      <span className={isActive ? activeClassName : undefined}>
+        {link.label}
+      </span>
+    )}
+  </NavLink>
 ));
 
 export default function Navbar() {
@@ -42,25 +53,24 @@ export default function Navbar() {
     );
   };
 
+  const themeSwitcher = (
+    <button onClick={toggleTheme} className="text-3xl">
+      {theme === Theme.LIGHT ? '🌚' : '🌝'}
+    </button>
+  );
+
   return (
     <Popover className="relative">
-      <div className="flex items-center justify-between pt-3">
+      <div className="flex items-center justify-between p-4">
         <div className="flex w-full items-center justify-between">
-          <Link to="/" className="styled-link font-logo text-2xl md:text-5xl">
-            Seth Hall
-          </Link>
+          {logo}
           <div className="hidden flex-grow justify-end md:flex">
             {navigation}
-            <button onClick={toggleTheme} className="text-3xl">
-              {theme === Theme.LIGHT ? '🌚' : '🌝'}
-            </button>
+            {themeSwitcher}
           </div>
         </div>
         <div className="flex md:hidden">
-          <button onClick={toggleTheme} className="mr-2 text-3xl">
-            {theme === Theme.LIGHT ? '🌚' : '🌝'}
-          </button>
-          <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-slate-100   focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500">
+          <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500 dark:text-slate-100">
             <span className="sr-only">Open menu</span>
             <MenuIcon className="h-8 w-8" aria-hidden="true" />
           </Popover.Button>
@@ -80,23 +90,17 @@ export default function Navbar() {
           focus
           className="absolute inset-x-0 top-0 origin-top-right transform transition md:hidden"
         >
-          <div className="rounded-lg bg-slate-900 shadow-lg ring-1 ring-black ring-opacity-5">
-            <div className="pt-3 pb-6">
-              <div className="flex items-center justify-between">
-                <Link
-                  to="/"
-                  className="styled-link font-logo text-2xl md:text-5xl"
-                >
-                  Seth Hall
-                </Link>
-                <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500">
-                  <span className="sr-only">Close menu</span>
-                  <XIcon className="h-8 w-8" aria-hidden="true" />
-                </Popover.Button>
-              </div>
-              <div className="mt-6">
-                <nav className="grid gap-y-2">{navigation}</nav>
-              </div>
+          <div className="rounded-lg bg-white p-4 shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-slate-900">
+            <div className="flex items-center justify-between">
+              {logo}
+              <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500 dark:text-slate-100">
+                <span className="sr-only">Close menu</span>
+                <XIcon className="h-8 w-8" aria-hidden="true" />
+              </Popover.Button>
+            </div>
+            <div className="mt-6 flex items-center justify-around">
+              {navigation}
+              {themeSwitcher}
             </div>
           </div>
         </Popover.Panel>

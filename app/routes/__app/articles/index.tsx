@@ -26,7 +26,7 @@ export default function Articles() {
   const articles = useLoaderData();
   console.log('articles', articles);
   return (
-    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-24 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
       {articles.map((article: DevToArticleMeta) => (
         <div
           key={article.id}

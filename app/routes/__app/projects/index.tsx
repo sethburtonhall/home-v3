@@ -24,8 +24,7 @@ export default function Projects() {
   const repos = useLoaderData<any>();
   console.log(repos);
   return (
-    <div>
-      <h1>Projects</h1>
+    <div className="mt-24">
       {repos.map((repo: repoProps) => (
         <div key={repo.id}>
           <a href={repo.html_url}>{repo.name}</a>

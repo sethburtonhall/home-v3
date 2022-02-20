@@ -3,7 +3,7 @@ import { AtSymbolIcon } from '@heroicons/react/outline';
 // HeroIcons React: https://unpkg.com/browse/@heroicons/react@1.0.5/outline/
 export default function SocialIcons() {
   return (
-    <div className="mb-6 flex w-full items-center justify-around sm:w-1/2 md:mb-0 md:w-1/3 lg:w-1/6 lg:justify-start">
+    <div className="order-2 flex w-[250px] items-center justify-between md:order-1 md:mb-0">
       <a
         href="https://github.com/sethburtonhall"
         target="_blank"
@@ -72,7 +72,7 @@ export default function SocialIcons() {
         href="https://dev.to/sethburtonhall"
         target="_blank"
         rel="noopener"
-        className="social-icon mb-[-3px] text-lg"
+        className="social-icon mb-[-3px] font-sans text-lg font-bold"
         title="Dev.to"
       >
         DEV
