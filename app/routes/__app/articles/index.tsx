@@ -26,12 +26,9 @@ export default function Articles() {
   const articles = useLoaderData();
   console.log('articles', articles);
   return (
-    <div className="mt-24 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
       {articles.map((article: DevToArticleMeta) => (
-        <div
-          key={article.id}
-          className="mx-auto max-w-2xl overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-800"
-        >
+        <div key={article.id} className="card flex flex-col">
           <img
             className="h-64 w-full object-cover"
             src={article.cover_image}
@@ -39,29 +36,26 @@ export default function Articles() {
           />
 
           <div className="p-6">
-            <div>
+            <div className="flex flex-wrap ">
               {article.tag_list.map((tag: string) => (
-                <span className="mr-3 text-xs font-medium uppercase text-blue-500 dark:text-blue-500">
+                <span className="mr-2 text-xs font-medium text-blue-500 dark:text-blue-500">
                   #{tag}
                 </span>
               ))}
-              <Link
-                to={`/articles/${article.id}`}
-                prefetch="intent"
-                className="dark:focus-outline-none mt-2 block transform text-2xl font-semibold transition-colors duration-200 hover:text-blue-500 focus:outline-none dark:hover:text-blue-500"
-              >
-                {article.title}
-              </Link>
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                {article.description}
-              </p>
             </div>
-
-            <div className="mt-4">
-              <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
-                {article.readable_publish_date}
-              </span>
-            </div>
+            <Link
+              to={`/articles/${article.id}`}
+              prefetch="intent"
+              className="link"
+            >
+              {article.title}
+            </Link>
+            <p className="text-sm italic text-gray-600 dark:text-gray-400">
+              {article.readable_publish_date}
+            </p>
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+              {article.description}
+            </p>
           </div>
         </div>
       ))}

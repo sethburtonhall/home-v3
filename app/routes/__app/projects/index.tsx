@@ -1,35 +1,49 @@
 import { useLoaderData } from 'remix';
 import type { LoaderFunction } from 'remix';
+import ShortStacks from './components/ShortStacks';
+import Showcase from './components/Showcase';
+import OtherProjects from './components/OtherProjects';
 
-type LoaderData = {
-  topics: string | string[];
-};
-
-type repoProps = {
+export type repoProps = {
   id: string;
   html_url: string;
   name: string;
+  description: string;
+  homepage: string;
+  topics: string[];
 };
 
 export const loader: LoaderFunction = async () => {
-  const res = await fetch('https://api.github.com/users/sethburtonhall/repos');
-  const repos = await res.json();
-  const filteredRepos = repos.filter((repo: LoaderData) =>
-    repo.topics.includes('ui')
+  const res = await fetch(
+    'https://api.github.com/users/sethburtonhall/repos?per_page=100',
+    // accept
+    {
+      headers: {
+        Accept: 'application/vnd.github.v3+json',
+      },
+    }
   );
-  return filteredRepos;
+  const repos = await res.json();
+  const showcases = repos.filter((repo: repoProps) =>
+    repo.topics.includes('showcase')
+  );
+  const shortstacks = repos.filter((repo: repoProps) =>
+    repo.topics.includes('shortstack')
+  );
+  return {
+    showcases,
+    shortstacks,
+  };
+  return repos;
 };
 
 export default function Projects() {
-  const repos = useLoaderData<any>();
-  console.log(repos);
+  const { showcases, shortstacks } = useLoaderData();
   return (
-    <div className="mt-24">
-      {repos.map((repo: repoProps) => (
-        <div key={repo.id}>
-          <a href={repo.html_url}>{repo.name}</a>
-        </div>
-      ))}
+    <div className="flex flex-col space-y-12">
+      <Showcase showcases={showcases} />
+      <ShortStacks shortstacks={shortstacks} />
+      <OtherProjects />
     </div>
   );
 }

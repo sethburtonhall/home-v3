@@ -71,7 +71,8 @@ function App() {
 
   return (
     // https://www.mattstobbs.com/remix-dark-mode/ Nice one!! 😎 🤯
-    <html lang="en" className={clsx(theme)}>
+    // <html lang="en" className={clsx(theme)}>
+    <html lang="en" className={clsx('dark')}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />

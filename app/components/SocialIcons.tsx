@@ -1,5 +1,5 @@
 import { AtSymbolIcon } from '@heroicons/react/outline';
-// all icons are https://heroicons.com/ SVG except https://remixicon.com/ for LinkedIn
+// some of these are are https://heroicons.com/ SVG except https://remixicon.com/ for LinkedIn
 // HeroIcons React: https://unpkg.com/browse/@heroicons/react@1.0.5/outline/
 export default function SocialIcons() {
   return (
@@ -76,6 +76,58 @@ export default function SocialIcons() {
         title="Dev.to"
       >
         DEV
+      </a>
+      <a
+        href="https://www.polywork.com/sethhall"
+        target="_blank"
+        rel="noopener"
+        className="social-icon polywork"
+        title="Polywork"
+      >
+        <span className="sr-only">Polywork</span>
+        <svg
+          className="!h-[18px]"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 226 227"
+          stroke="none"
+        >
+          <rect x="79.8853" width="66.0984" height="67.1475" fill="white" />
+          <rect
+            x="79.8853"
+            y="81.8361"
+            width="66.0984"
+            height="67.1475"
+            fill="white"
+          />
+          <rect
+            x="0.147461"
+            y="81.8361"
+            width="66.0984"
+            height="67.1475"
+            fill="white"
+          />
+          <path
+            d="M0.147461 37.7705C0.147461 16.9104 17.0579 0 37.9179 0H66.2458V67.1475H0.147461V37.7705Z"
+            fill="white"
+          />
+          <path
+            d="M159.623 0H187.951C208.811 0 225.721 16.9104 225.721 37.7705V67.1475H159.623V0Z"
+            fill="white"
+          />
+          <path
+            d="M159.623 81.8361H225.721V115.41C225.721 133.952 210.69 148.984 192.148 148.984H159.623V81.8361Z"
+            fill="white"
+          />
+          <path
+            d="M0.147461 163.672H66.2458V226.623H42.1147C18.9368 226.623 0.147461 207.834 0.147461 184.656V163.672Z"
+            fill="white"
+          />
+          <path
+            d="M79.8853 163.672H145.984V184.656C145.984 207.834 127.194 226.623 104.016 226.623H79.8853V163.672Z"
+            fill="white"
+          />
+        </svg>
       </a>
       <a
         href="mailto:sethburtonhall@gmail.com"

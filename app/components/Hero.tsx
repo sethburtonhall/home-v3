@@ -1,21 +1,9 @@
 import Moment from 'moment';
-import { CloudinaryImage } from '@cloudinary/url-gen';
-import {
-  AdvancedImage,
-  lazyload,
-  responsive,
-  placeholder,
-} from '@cloudinary/react';
-
 import Typewriter from 'typewriter-effect';
-
-const image = new CloudinaryImage('home-v3/seth_blob', {
-  cloudName: 'seth-hall',
-});
 
 export default function Hero() {
   return (
-    <div className="mx-auto mt-12 flex w-full flex-col items-center lg:mt-24 xl:w-2/3">
+    <div className="mx-auto flex w-full flex-col items-center xl:w-2/3">
       {/* Intro */}
       <h1>Hey Y'all!</h1>
       <p className="mb-6 text-center text-xl md:text-2xl">
@@ -29,24 +17,43 @@ export default function Hero() {
         </a>
         .
       </p>
-      <p className="mb-6 text-justify text-lg md:mb-12 md:text-xl">
-        I value authentic communication, mental health advocacy and creative
-        collaboration. When I am not coding you can find me building
-        relationships and community on{' '}
+      <p className="mb-6 text-justify text-lg leading-4 md:mb-12 md:text-xl">
+        I value authentic communication, an supportive and healthy workplace and
+        creative collaboration mental health advocacy. When I am not coding I am
+        building relationships and community on{' '}
         <a
           href="https://twitter.com/sethburtonhall"
           target="_blank"
           rel="noopener"
-          className="text-blue-500"
+          className="styled-link"
         >
           Twitter
         </a>
-        , Slack, and Discord. Outside of work I like to hang out with my wife
-        and kids, travel and adventure outdoors.
+        ,{' '}
+        <a
+          href="https://virtualcoffee.io/"
+          target="_blank"
+          rel="noopener"
+          className="styled-link"
+        >
+          VC Slack
+        </a>
+        ,{' '}
+        <a
+          href="https://jamstack.org/"
+          target="_blank"
+          rel="noopener"
+          className="styled-link"
+        >
+          Jamstack Discord
+        </a>
+        . Outside of work I enjoy traveling and going on outdoor adventures with
+        my wife and kids. I have an MFA in film producing, a lot of which
+        transfers to tech.
       </p>
 
       {/* Terminal */}
-      <div className="relative w-full font-terminal md:w-5/6">
+      <div className="font-terminal relative w-full md:w-5/6">
         <div className="absolute w-full rounded-md rounded-b-none border-t-[32px] border-slate-800"></div>
         <div className="absolute flex p-2">
           <div className="mr-2 h-4 w-4 rounded-full bg-red-500"></div>

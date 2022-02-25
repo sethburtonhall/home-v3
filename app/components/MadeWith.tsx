@@ -6,7 +6,7 @@ export default function MadeWith() {
           href="https://github.com/sethburtonhall/home-v3-frontend"
           target="_blank"
           rel="noopener"
-          className="mr-1 pt-1"
+          className="mr-1 pt-1 hover:text-blue-500"
         >
           v3.0
         </a>
