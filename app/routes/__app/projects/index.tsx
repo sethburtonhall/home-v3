@@ -1,8 +1,7 @@
 import { useLoaderData } from 'remix';
 import type { LoaderFunction } from 'remix';
-import ShortStacks from './components/ShortStacks';
-import Showcase from './components/Showcase';
-import OtherProjects from './components/OtherProjects';
+
+import { Showcase, ShortStacks, OtherProjects } from './components';
 
 export type repoProps = {
   id: string;
@@ -16,10 +15,10 @@ export type repoProps = {
 export const loader: LoaderFunction = async () => {
   const res = await fetch(
     'https://api.github.com/users/sethburtonhall/repos?per_page=100',
-    // accept
     {
       headers: {
         Accept: 'application/vnd.github.v3+json',
+        authorization: `token ${process.env.GITHUB_TOKEN}`,
       },
     }
   );
@@ -34,7 +33,6 @@ export const loader: LoaderFunction = async () => {
     showcases,
     shortstacks,
   };
-  return repos;
 };
 
 export default function Projects() {

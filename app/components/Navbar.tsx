@@ -6,7 +6,10 @@ import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 let logo = (
-  <Link to="/" className="md:styled-link font-logo text-2xl md:text-5xl">
+  <Link
+    to="/"
+    className="styled-link font-logo text-3xl md:text-4xl lg:text-5xl"
+  >
     Seth Hall
   </Link>
 );

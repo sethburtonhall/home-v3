@@ -17,7 +17,7 @@ export default function Hero() {
         </a>
         .
       </p>
-      <p className="mb-6 text-justify text-lg leading-4 md:mb-12 md:text-xl">
+      <p className="mb-6 text-justify text-lg md:mb-12 md:text-xl">
         I value authentic communication, an supportive and healthy workplace and
         creative collaboration mental health advocacy. When I am not coding I am
         building relationships and community on{' '}
@@ -53,7 +53,7 @@ export default function Hero() {
       </p>
 
       {/* Terminal */}
-      <div className="font-terminal relative w-full md:w-5/6">
+      <div className="relative w-full font-terminal md:w-5/6">
         <div className="absolute w-full rounded-md rounded-b-none border-t-[32px] border-slate-800"></div>
         <div className="absolute flex p-2">
           <div className="mr-2 h-4 w-4 rounded-full bg-red-500"></div>

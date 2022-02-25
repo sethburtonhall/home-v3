@@ -26,7 +26,7 @@ export default function Articles() {
   const articles = useLoaderData();
   console.log('articles', articles);
   return (
-    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="card-grid">
       {articles.map((article: DevToArticleMeta) => (
         <div key={article.id} className="card flex flex-col">
           <img
@@ -35,8 +35,8 @@ export default function Articles() {
             alt={article.title}
           />
 
-          <div className="p-6">
-            <div className="flex flex-wrap ">
+          <div className="p-6 pb-0">
+            <div className="mb-2 flex flex-wrap">
               {article.tag_list.map((tag: string) => (
                 <span className="mr-2 text-xs font-medium text-blue-500 dark:text-blue-500">
                   #{tag}
@@ -46,16 +46,22 @@ export default function Articles() {
             <Link
               to={`/articles/${article.id}`}
               prefetch="intent"
-              className="link"
+              className="link text-2xl"
             >
               {article.title}
             </Link>
-            <p className="text-sm italic text-gray-600 dark:text-gray-400">
+            <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
               {article.readable_publish_date}
             </p>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
               {article.description}
             </p>
+          </div>
+
+          <div className="mt-auto p-6">
+            <Link to={`/articles/${article.id}`} className="button">
+              Read More
+            </Link>
           </div>
         </div>
       ))}

@@ -5,7 +5,7 @@ import type { DevToArticleMeta } from '.';
 
 interface DevToArticle extends DevToArticleMeta {
   body_html: string;
-  body_markdown: string;
+  // body_markdown: string;
 }
 
 export const loader: LoaderFunction = async ({ params }) => {
@@ -18,15 +18,18 @@ export const loader: LoaderFunction = async ({ params }) => {
 
 export default function Article() {
   const article = useLoaderData<DevToArticle>();
-  // console.log('article', { title });
+
   return (
-    <div>
+    <div className="article">
       {/* <img src={article.cover_image} alt={article.title} /> */}
-      <h2>{article.title}</h2>
-      <p>{article.readable_publish_date}</p>
-      <a href={article.url} target="_blank" rel="noopener">
-        Read Post on Dev.to
-      </a>
+      <h1>{article.title}</h1>
+      <div className="mb-6">
+        <p className="text-sm">
+          <a href={article.url} target="_blank" rel="noopener" className="link">
+            Posted on {article.readable_publish_date} from Dev.to
+          </a>
+        </p>
+      </div>
       <div dangerouslySetInnerHTML={{ __html: article.body_html }} />
     </div>
   );

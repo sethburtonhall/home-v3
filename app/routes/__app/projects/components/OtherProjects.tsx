@@ -7,38 +7,47 @@ export default function OtherProjects() {
         <DatabaseIcon className="h-7 w-7" />
         <h2>Other Projects</h2>
       </div>
-      <ul>
+      <ul className="flex flex-col space-y-4">
         <li>
           <a
-            className="link"
+            className="link flex flex-col"
             href="https://artistrescue.org/"
             target="_blank"
             rel="noopener"
             title="Artist Rescue Trust"
           >
-            Artist Rescue
+            <span>Artist Rescue</span>
+            <span className="pl-2 text-sm text-gray-400">
+              Jamstack: DatoCMS, Gatsby. GraphQL, Netlify
+            </span>
           </a>
         </li>
         <li>
           <a
-            className="link"
+            className="link flex flex-col"
             href="https://tvp.com/"
             target="_blank"
             rel="noopener"
             title="Technology Venture Partners"
           >
-            Technology Venture Partners
+            <span>Technology Venture Partners</span>
+            <span className="pl-2 text-sm text-gray-400">
+              Jamstack: CloudCannon, Jekyll
+            </span>
           </a>
         </li>
         <li>
           <a
-            className="link"
+            className="link flex flex-col"
             href="https://protege.dev/"
             target="_blank"
             rel="noopener"
             title="Protege"
           >
-            Protege
+            <span>Protege</span>
+            <span className="pl-2 text-sm text-gray-400">
+              NextJS, Tailwind, Firebase, Vercel
+            </span>
           </a>
         </li>
         <li>
@@ -49,7 +58,10 @@ export default function OtherProjects() {
             rel="noopener"
             title="Ushahidi"
           >
-            Ushahidi
+            <span>Ushahidi</span>
+            <span className="pl-2 text-sm text-gray-400">
+              CraftCMS, Twig, Vanilla HTML/CSS/JS
+            </span>
           </a>
         </li>
       </ul>
