@@ -29,7 +29,7 @@ export default function MadeWith() {
           href="https://tailwindcss.com/"
           target="_blank"
           rel="noopener"
-          className="ml-2 rounded bg-cyan-600 px-2 pt-1 pb-1 text-gray-900 hover:text-gray-900"
+          className="ml-2 rounded bg-cyan-600 px-2 pt-1 pb-1 text-slate-50"
         >
           Tailwind
         </a>

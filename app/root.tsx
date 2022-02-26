@@ -8,6 +8,7 @@ import {
   useLoaderData,
 } from 'remix';
 import type { LinksFunction, MetaFunction, LoaderFunction } from 'remix';
+import { ExternalScripts } from 'remix-utils';
 
 import clsx from 'clsx';
 
@@ -20,13 +21,6 @@ import type { Theme } from '~/utils/theme-provider';
 import { getThemeSession } from '~/utils/theme.server';
 
 import styles from './styles/app.css';
-
-{
-  /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-<!-- and it's easy to individually load additional languages -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/go.min.js"></script> */
-}
 
 export const links: LinksFunction = () => {
   return [
@@ -90,9 +84,12 @@ function App() {
       <body>
         <Outlet />
         <ScrollRestoration />
+        <ExternalScripts />
         <Scripts />
         {process.env.NODE_ENV === 'development' && <LiveReload />}
       </body>
+      {/* https://highlightjs.org/usage/ loading from $article.tsx script function */}
+      <script>hljs.highlightAll()</script>
     </html>
   );
 }

@@ -22,7 +22,7 @@
 
   h2 {
     /* @apply mb-2 text-3xl; */
-    @apply text-3xl;
+    @apply text-2xl md:text-3xl;
   }
 
   h3 {
@@ -34,6 +34,7 @@
   .button {
     @apply rounded-md bg-blue-500 px-2 py-1 text-sm font-semibold hover:bg-blue-600 active:bg-blue-700;
   }
+
   .link {
     @apply block transform font-semibold transition-colors duration-200 hover:text-blue-500 focus:outline-none dark:hover:text-blue-500 dark:focus:outline-none;
   }
@@ -65,6 +66,11 @@
     @apply mx-auto max-w-2xl overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-800;
   }
 
+  .article {
+    @apply mx-auto max-w-5xl;
+  }
+
+  /* code snippets and syntax highlighting */
   .article a {
     @apply text-blue-500 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-600;
   }
@@ -77,10 +83,6 @@
     @apply mb-3;
   }
 
-  .article h3 {
-    @apply mb-1;
-  }
-
   .article ul {
     @apply mb-6 pl-3;
   }
@@ -89,18 +91,89 @@
     @apply mb-6;
   }
 
+  /* inline code */
   .article p code {
-    @apply bg-black p-1 font-terminal text-rose-500;
+    @apply bg-slate-900 px-2 py-1 font-terminal text-pink-500;
   }
 
-  .article p code::before {
-    content: '📂';
+  .article blockquote {
+    @apply ml-3 border-l-4 border-blue-500 pl-3 italic text-slate-400;
   }
-}
 
-@layer utilities {
-  /* code snippets and syntax highlighting */
-  .highlight.js-code-highlight {
-    @apply bg-red-500;
+  .article blockquote.ltag__twitter-tweet {
+    @apply relative m-0 mb-6 mr-auto max-w-xl cursor-pointer rounded-md border-none bg-slate-100 p-4 font-serif shadow-md;
+  }
+
+  .article blockquote .ltag__twitter-tweet__header {
+    @apply h-14;
+  }
+
+  .article
+    blockquote.ltag__twitter-tweet
+    .ltag__twitter-tweet__header
+    .ltag__twitter-tweet__profile-image {
+    @apply absolute m-0 h-10 min-h-[36px] w-10 rounded-full bg-slate-50;
+    top: calc(0.3vw + 13px);
+    left: calc(0.3vw + 13px);
+  }
+
+  .article
+    blockquote.ltag__twitter-tweet
+    .ltag__twitter-tweet__header
+    .ltag__twitter-tweet__full-name {
+    @apply absolute text-base font-bold text-slate-900;
+    left: calc(0.3vw + 57px);
+    top: calc(0.3vw + 13px);
+  }
+
+  .article
+    blockquote.ltag__twitter-tweet
+    .ltag__twitter-tweet__header
+    .ltag__twitter-tweet__username {
+    @apply absolute text-[14px] text-slate-400;
+    left: calc(0.3vw + 57px);
+    top: calc(0.3vw + 33px);
+  }
+
+  .article
+    blockquote.ltag__twitter-tweet
+    .ltag__twitter-tweet__header
+    .ltag__twitter-tweet__twitter-logo {
+    @apply absolute top-5 left-auto;
+    right: calc(0.3vw + 8px);
+  }
+
+  .article blockquote.ltag__twitter-tweet .ltag__twitter-tweet__body {
+    @apply text-base font-medium not-italic leading-6 text-slate-900;
+  }
+
+  .article blockquote.ltag__twitter-tweet .ltag__twitter-tweet__date {
+    @apply mt-1 text-[14px] text-slate-400;
+  }
+
+  .article blockquote.ltag__twitter-tweet .ltag__twitter-tweet__actions {
+    @apply flex items-center space-x-2 text-sm text-slate-400;
+  }
+
+  .article blockquote.ltag__twitter-tweet .ltag__twitter-tweet__actions a img {
+    @apply h-5 w-5;
+  }
+
+  .article .hljs.language-plaintext::before {
+    content: '📁 ';
+  }
+
+  /* the code blocks */
+  .article .hljs {
+    @apply mb-6 rounded-md bg-slate-900 p-4 !important;
+  }
+
+  /* the file name before the code block */
+  .article .hljs.language-plaintext {
+    @apply mb-0 bg-transparent pl-0 font-terminal text-pink-500 !important;
+  }
+
+  .article .js-actions-panel {
+    @apply hidden;
   }
 }
