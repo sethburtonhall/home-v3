@@ -57,7 +57,7 @@ export default function SocialIcons() {
       >
         <span className="sr-only">LinkedIn</span>
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           fill="currentColor"
           viewBox="0 0 24 24"
           stroke="none"
@@ -87,7 +87,7 @@ export default function SocialIcons() {
         <span className="sr-only">Polywork</span>
         <svg
           className="!h-[18px]"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           fill="currentColor"
           viewBox="0 0 226 227"
           stroke="none"
@@ -140,7 +140,7 @@ export default function SocialIcons() {
         <svg
           fill="currentColor"
           viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <path
             fillRule="evenodd"

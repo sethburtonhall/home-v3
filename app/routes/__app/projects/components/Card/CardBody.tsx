@@ -16,7 +16,7 @@ export default function CardBody({ type, tag }: CardBodyProps) {
         {filteredTopics.map((topic: string, index: number) => (
           <span
             key={index}
-            className="mr-2 text-xs font-medium text-blue-500 dark:text-blue-500"
+            className="mr-2 text-xs font-medium text-blue-400 dark:text-blue-400"
           >
             #{topic}
           </span>

@@ -13,7 +13,7 @@ export default function CardFooter({ type }: CardFooterProps) {
         rel="noopener"
         className="button bg-black hover:bg-black"
       >
-        <span className="flex w-full items-center justify-start space-x-1">
+        <span className="flex w-full items-center justify-start space-x-1 text-slate-50">
           <span>Github</span>
         </span>
       </a>

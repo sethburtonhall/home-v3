@@ -25,45 +25,53 @@ export const loader: LoaderFunction = async () => {
 export default function Articles() {
   const articles = useLoaderData();
   return (
-    <div className="card-grid">
-      {articles.map((article: DevToArticleMeta) => (
-        <div key={article.id} className="card flex flex-col">
-          <img
-            className="h-64 w-full object-cover"
-            src={article.cover_image}
-            alt={article.title}
-          />
+    <>
+      <h2 className="sr-only" role="heading">
+        Articles
+      </h2>
+      <div className="card-grid">
+        {articles.map((article: DevToArticleMeta) => (
+          <div key={article.id} className="card flex flex-col">
+            <img
+              className="h-64 w-full object-cover"
+              src={article.cover_image}
+              alt={article.title}
+            />
 
-          <div className="p-6 pb-0">
-            <div className="mb-2 flex flex-wrap">
-              {article.tag_list.map((tag: string) => (
-                <span className="mr-2 text-xs font-medium text-blue-500 dark:text-blue-500">
-                  #{tag}
-                </span>
-              ))}
+            <div className="p-6 pb-0">
+              <div className="mb-2 flex flex-wrap">
+                {article.tag_list.map((tag: string) => (
+                  <span
+                    key={tag}
+                    className="mr-2 text-xs font-medium text-blue-400 dark:text-blue-400"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+              <Link
+                to={`/articles/${article.id}`}
+                prefetch="intent"
+                className="link text-2xl"
+              >
+                {article.title}
+              </Link>
+              <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
+                {article.readable_publish_date}
+              </p>
+              <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
+                {article.description}
+              </p>
             </div>
-            <Link
-              to={`/articles/${article.id}`}
-              prefetch="intent"
-              className="link text-2xl"
-            >
-              {article.title}
-            </Link>
-            <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
-              {article.readable_publish_date}
-            </p>
-            <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
-              {article.description}
-            </p>
-          </div>
 
-          <div className="mt-auto p-6">
-            <Link to={`/articles/${article.id}`} className="button">
-              Read More
-            </Link>
+            <div className="mt-auto p-6">
+              <Link to={`/articles/${article.id}`} className="button">
+                Read More
+              </Link>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }

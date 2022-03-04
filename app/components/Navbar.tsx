@@ -64,13 +64,18 @@ export default function Navbar() {
 
   return (
     <Popover className="relative">
-      <div className="flex items-center justify-between p-4">
+      <div className="flex items-center justify-between p-4" role="banner">
         <div className="flex w-full items-center justify-between">
-          {logo}
-          <div className="hidden flex-grow justify-end md:flex">
+          <h1 role="heading" aria-level={1}>
+            {logo}
+          </h1>
+          <nav
+            className="hidden flex-grow justify-end md:flex"
+            role="navigation"
+          >
             {navigation}
-            {themeSwitcher}
-          </div>
+            {/* {themeSwitcher} */}
+          </nav>
         </div>
         <div className="flex md:hidden">
           <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500 dark:text-slate-100">
@@ -103,7 +108,7 @@ export default function Navbar() {
             </div>
             <div className="mt-6 flex items-center justify-around">
               {navigation}
-              {themeSwitcher}
+              {/* {themeSwitcher} */}
             </div>
           </div>
         </Popover.Panel>
