@@ -9,6 +9,14 @@ export default function OtherProjects() {
       </div>
       <ul className="flex flex-col space-y-4">
         <li>
+          <div className="link flex flex-col">
+            <span>This Website!!</span>
+            <span className="pl-2 text-sm text-gray-400">
+              Remix, Tailwind, GithubAPI, DevAPI, Cloudinary, Netlify
+            </span>
+          </div>
+        </li>
+        <li>
           <a
             className="link flex flex-col"
             href="https://artistrescue.org/"
@@ -18,7 +26,7 @@ export default function OtherProjects() {
           >
             <span>Artist Rescue</span>
             <span className="pl-2 text-sm text-gray-400">
-              Jamstack: DatoCMS, Gatsby. GraphQL, Netlify
+              DatoCMS, Gatsby, GraphQL, Netlify
             </span>
           </a>
         </li>
@@ -32,7 +40,7 @@ export default function OtherProjects() {
           >
             <span>Technology Venture Partners</span>
             <span className="pl-2 text-sm text-gray-400">
-              Jamstack: CloudCannon, Jekyll
+              CloudCannon, Jekyll
             </span>
           </a>
         </li>
@@ -52,7 +60,7 @@ export default function OtherProjects() {
         </li>
         <li>
           <a
-            className="link"
+            className="link flex flex-col"
             href="https://ushahidi.com/"
             target="_blank"
             rel="noopener"

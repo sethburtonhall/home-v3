@@ -23,8 +23,6 @@ export default function CardImage({ type, imagePath }: CardImageProps) {
     }
   );
 
-  console.log(image);
-
   return (
     <AdvancedImage
       cldImg={image}

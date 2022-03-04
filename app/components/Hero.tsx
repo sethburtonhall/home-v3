@@ -18,9 +18,11 @@ export default function Hero() {
         .
       </p>
       <p className="mb-6 text-justify text-lg md:mb-12 md:text-xl">
-        I value authentic communication, an supportive and healthy workplace and
-        creative collaboration mental health advocacy. When I am not coding I am
-        building relationships and community on{' '}
+        I am a creative who values authentic communication and collaboration. I
+        am a mental health advocate and believe the workplace should be
+        supportive and empowering. When I am not coding, I am usually embarking
+        on epic adventures with my wife and kids. You can also find me building
+        relationships and community on{' '}
         <a
           href="https://twitter.com/sethburtonhall"
           target="_blank"
@@ -45,11 +47,8 @@ export default function Hero() {
           rel="noopener"
           className="styled-link"
         >
-          Jamstack Discord
+          Jamstack Discord.
         </a>
-        . Outside of work I enjoy traveling and going on outdoor adventures with
-        my wife and kids. I have an MFA in film producing, a lot of which
-        transfers to tech.
       </p>
 
       {/* Terminal */}
@@ -96,15 +95,27 @@ export default function Hero() {
             <span className="mr-2">$</span>
             <Typewriter
               options={{
-                strings: [
-                  'npx create-remix@latest',
-                  'yarn add typescript',
-                  'yarn add tailwindcss',
-                  'yarn add the JAMstack!',
-                ],
                 autoStart: true,
                 loop: true,
-                delay: 50,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .pauseFor(2000)
+                  .typeString('npx create-remix@latest')
+                  .pauseFor(500)
+                  .deleteAll()
+                  .pauseFor(1000)
+                  .typeString('yarn add typescript')
+                  .pauseFor(500)
+                  .deleteAll()
+                  .pauseFor(1000)
+                  .typeString('yarn add tailwindcss')
+                  .pauseFor(500)
+                  .deleteAll()
+                  .pauseFor(1000)
+                  .typeString('yarn add the JAMstack!')
+                  .pauseFor(500)
+                  .start();
               }}
             />
           </div>

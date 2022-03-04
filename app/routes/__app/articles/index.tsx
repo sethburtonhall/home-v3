@@ -24,7 +24,6 @@ export const loader: LoaderFunction = async () => {
 
 export default function Articles() {
   const articles = useLoaderData();
-  console.log('articles', articles);
   return (
     <div className="card-grid">
       {articles.map((article: DevToArticleMeta) => (

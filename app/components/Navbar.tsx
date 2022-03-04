@@ -27,11 +27,11 @@ let navigationItems = [
     label: 'Projects',
     href: '/projects',
   },
-  {
-    id: 3,
-    label: 'Resume',
-    href: '/resume',
-  },
+  // {
+  //   id: 3,
+  //   label: 'Resume',
+  //   href: '/resume',
+  // },
 ];
 let navigation = navigationItems.map((link) => (
   <NavLink
