@@ -28,7 +28,10 @@ let scripts: ExternalScriptsFunction = () => {
   ];
 };
 
-export let handle = { scripts };
+export let handle = {
+  scripts,
+  hydrate: true,
+};
 
 export const loader: LoaderFunction = async ({ params }) => {
   invariant(params.articleId, 'article is required');
@@ -48,7 +51,7 @@ export default function Article() {
         <ArrowLeftIcon className="h-5 w-5" />
         <span>Back</span>
       </Link>
-      <h1>{article.title}</h1>
+      <h1 className="text-4xl md:text-5xl">{article.title}</h1>
       <div className="mb-6">
         <p className="text-sm">
           <a href={article.url} target="_blank" rel="noopener" className="link">

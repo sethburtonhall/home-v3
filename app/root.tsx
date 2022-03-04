@@ -8,7 +8,7 @@ import {
   useLoaderData,
 } from 'remix';
 import type { LinksFunction, MetaFunction, LoaderFunction } from 'remix';
-import { ExternalScripts } from 'remix-utils';
+import { ExternalScripts, useShouldHydrate } from 'remix-utils';
 
 import clsx from 'clsx';
 
@@ -26,7 +26,7 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: 'icon',
-      href: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😄</text></svg>',
+      href: 'data:image/svg+xml,<svg xmlns=%22https://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😄</text></svg>',
     },
     {
       rel: 'stylesheet',
@@ -69,6 +69,7 @@ export const loader: LoaderFunction = async ({ request }) => {
 function App() {
   const [theme] = useTheme();
   const data = useLoaderData<LoaderData>();
+  let shouldHydrate = useShouldHydrate();
 
   return (
     // https://www.mattstobbs.com/remix-dark-mode/ Nice one!! 😎 🤯
@@ -85,11 +86,10 @@ function App() {
         <Outlet />
         <ScrollRestoration />
         <ExternalScripts />
-        <Scripts />
+        {shouldHydrate && <Scripts />}
         {process.env.NODE_ENV === 'development' && <LiveReload />}
+        <script>hljs.highlightAll()</script>
       </body>
-      {/* https://highlightjs.org/usage/ loading from $article.tsx script function */}
-      <script>hljs.highlightAll()</script>
     </html>
   );
 }
