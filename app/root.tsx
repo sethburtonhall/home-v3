@@ -5,20 +5,10 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useLoaderData,
 } from 'remix';
-import type { LinksFunction, MetaFunction, LoaderFunction } from 'remix';
+import type { LinksFunction, MetaFunction } from 'remix';
 import { ExternalScripts, useShouldHydrate } from 'remix-utils';
-
-import clsx from 'clsx';
-
-import {
-  NonFlashOfWrongTheme,
-  ThemeProvider,
-  useTheme,
-} from './utils/theme-provider';
-import type { Theme } from '~/utils/theme-provider';
-import { getThemeSession } from '~/utils/theme.server';
+import type { ExternalScriptsFunction } from 'remix-utils';
 
 import styles from './styles/app.css';
 
@@ -43,7 +33,7 @@ export const meta: MetaFunction = () => {
     description,
     keywords: 'Seth Hall, web developer',
     'twitter:image':
-      'https://res.cloudinary.com/seth-hall/image/upload/v1644975921/home-v3/social.png',
+      'https://res.cloudinary.com/seth-hall/image/upload/v1648303308/home-v3/social.png',
     'twitter:card': 'summary_large_image',
     'twitter:creator': '@sethburtonhall',
     'twitter:site': '@sethburtonhall',
@@ -52,41 +42,35 @@ export const meta: MetaFunction = () => {
   };
 };
 
-export type LoaderData = {
-  theme: Theme | null;
+// https://highlightjs.org/usage/
+let scripts: ExternalScriptsFunction = () => {
+  return [
+    {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js',
+    },
+  ];
 };
 
-export const loader: LoaderFunction = async ({ request }) => {
-  const themeSession = await getThemeSession(request);
-
-  const data: LoaderData = {
-    theme: themeSession.getTheme(),
-  };
-
-  return data;
+export let handle = {
+  scripts,
+  hydrate: true,
 };
 
 function App() {
-  const [theme] = useTheme();
-  const data = useLoaderData<LoaderData>();
   let shouldHydrate = useShouldHydrate();
-
   return (
-    // https://www.mattstobbs.com/remix-dark-mode/ Nice one!! 😎 🤯
-    // <html lang="en" className={clsx(theme)}>
-    <html lang="en" className={clsx('dark')}>
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
         <Links />
-        <NonFlashOfWrongTheme ssrTheme={Boolean(data.theme)} />
       </head>
       <body>
         <Outlet />
         <ScrollRestoration />
-        <ExternalScripts />
-        {shouldHydrate && <Scripts />}
+        {shouldHydrate && <ExternalScripts />}
+        <Scripts />
         {process.env.NODE_ENV === 'development' && <LiveReload />}
         <script>hljs.highlightAll()</script>
       </body>
@@ -95,10 +79,5 @@ function App() {
 }
 
 export default function AppwithProviders() {
-  const data = useLoaderData<LoaderData>();
-  return (
-    <ThemeProvider specifiedTheme={data.theme}>
-      <App />
-    </ThemeProvider>
-  );
+  return <App />;
 }

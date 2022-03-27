@@ -19,19 +19,19 @@ export const links: LinksFunction = () => {
   ];
 };
 
-// https://highlightjs.org/usage/
-let scripts: ExternalScriptsFunction = () => {
-  return [
-    {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js',
-    },
-  ];
-};
+// // https://highlightjs.org/usage/
+// let scripts: ExternalScriptsFunction = () => {
+//   return [
+//     {
+//       src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js',
+//     },
+//   ];
+// };
 
-export let handle = {
-  scripts,
-  hydrate: true,
-};
+// export let handle = {
+//   scripts,
+//   hydrate: true,
+// };
 
 export const loader: LoaderFunction = async ({ params }) => {
   invariant(params.articleId, 'article is required');
