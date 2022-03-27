@@ -5,9 +5,14 @@ export default function Hero() {
   return (
     <div className="mx-auto flex w-full flex-col items-center xl:w-2/3">
       {/* Intro */}
-      <h1 className="text-4xl md:text-5xl">Hey Y'all!</h1>
-      <p className="mb-6 text-center text-xl md:text-2xl">
-        My name is Seth. I am a Demo Engineer at
+      <h1 className="mb-6 text-4xl md:text-5xl">Hey Y'all!</h1>
+      {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
+      <p className="mb-6 text-justify text-lg md:mb-12 md:text-xl">
+        My name is Seth Hall. I am a front end focused web developer from North
+        Carolina (soon to be a traveling digital nomad). I value authentic
+        communication and creative collaboration and believe a workplace should
+        be supportive and empowering. I am currently working in the Jamstack as
+        a Demo Engineer at
         <a
           href="https://uniform.dev/"
           target="_blank"
@@ -15,14 +20,8 @@ export default function Hero() {
         >
           Uniform
         </a>
-        .
-      </p>
-      <p className="mb-6 text-justify text-lg md:mb-12 md:text-xl">
-        I am a creative who values authentic communication and collaboration. I
-        am a mental health advocate and believe the workplace should be
-        supportive and empowering. When I am not coding, I am usually embarking
-        on epic adventures with my wife and kids. You can also find me building
-        relationships and community on{' '}
+        . When I am not coding, I am usually embarking on epic adventures with
+        my wife and kids. You can also find me hanging out on{' '}
         <a
           href="https://twitter.com/sethburtonhall"
           target="_blank"
@@ -66,6 +65,10 @@ export default function Hero() {
           <br />
           <span className="text-blue-500">Seths-MacBook-Pro:~</span>
           <br />
+          <span>$ yawn add 😕 ... 🥱</span>
+          <br />
+          <span className="text-blue-500">Seths-MacBook-Pro:~</span>
+          <br />
           <span>$ yarn add breakfast</span>
           <br />
           <p className="text-2xl">
@@ -100,7 +103,7 @@ export default function Hero() {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .pauseFor(2000)
+                  .pauseFor(1000)
                   .typeString('npx create-remix@latest')
                   .pauseFor(500)
                   .deleteAll()

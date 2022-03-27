@@ -86,7 +86,7 @@ export default function SocialIcons() {
       >
         <span className="sr-only">Polywork</span>
         <svg
-          className="!h-[18px]"
+          className="!h-[18px] fill-slate-900"
           xmlns="https://www.w3.org/2000/svg"
           fill="currentColor"
           viewBox="0 0 226 227"
