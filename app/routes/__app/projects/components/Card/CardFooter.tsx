@@ -11,17 +11,13 @@ export default function CardFooter({ type }: CardFooterProps) {
         href={type.html_url}
         target="_blank"
         rel="noopener"
-        className="button bg-black hover:bg-black"
+        className="button bg-black text-slate-50 hover:bg-black"
       >
-        <span className="flex w-full items-center justify-start space-x-1 text-slate-50">
-          <span>Github</span>
-        </span>
+        Github
       </a>
 
       <a href={type.homepage} target="_blank" rel="noopener" className="button">
-        <span className="flex w-full items-center justify-start space-x-1">
-          <span>Visit Site</span>
-        </span>
+        Visit Site
       </a>
     </div>
   );

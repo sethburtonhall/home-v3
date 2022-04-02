@@ -47,7 +47,7 @@
 
 @layer components {
   .button {
-    @apply rounded-md bg-blue-500 px-2 py-1 text-sm font-semibold text-white hover:bg-blue-600 active:bg-blue-700 dark:text-black md:text-base;
+    @apply rounded-md bg-blue-500 px-2 py-1 text-base font-semibold text-white hover:bg-blue-600 active:bg-blue-700 dark:text-black;
   }
 
   .link {
