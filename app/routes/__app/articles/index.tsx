@@ -43,7 +43,7 @@ export default function Articles() {
                 {article.tag_list.map((tag: string) => (
                   <span
                     key={tag}
-                    className="mr-2 text-xs font-medium text-blue-400"
+                    className="mr-2 text-sm font-medium text-blue-400"
                   >
                     #{tag}
                   </span>
@@ -59,7 +59,7 @@ export default function Articles() {
               <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
                 {article.readable_publish_date}
               </p>
-              <p className="mb-2 text-base text-gray-600 dark:text-gray-400">
+              <p className="mb-2 text-sm text-gray-600 dark:text-gray-400 md:text-base">
                 {article.description}
               </p>
             </div>
