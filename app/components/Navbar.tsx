@@ -7,7 +7,9 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 let logo = (
   <Link
     to="/"
-    className="styled-link font-logo text-3xl md:text-4xl lg:text-5xl"
+    className="styled-link font-logo text-4xl md:text-5xl"
+    role="heading"
+    aria-level={1}
   >
     Seth Hall
   </Link>
@@ -43,9 +45,7 @@ export default function Navbar() {
     <Popover className="relative">
       <div className="flex items-center justify-between p-4" role="banner">
         <div className="flex w-full items-center justify-between">
-          <h1 role="heading" aria-level={1}>
-            {logo}
-          </h1>
+          {logo}
           <nav
             className="hidden flex-grow justify-end md:flex"
             role="navigation"
