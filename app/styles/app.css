@@ -665,7 +665,7 @@ a:focus-visible, .focus-link:focus-visible{
   color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
-/* these class cleans up SocialIcons.tsx */
+/* this class cleans up SocialIcons.tsx */
 
 .social-icon{
   --tw-text-opacity: 1;
@@ -711,6 +711,12 @@ a:focus-visible, .focus-link:focus-visible{
 
 .social-icon.polywork svg rect, .social-icon.polywork svg path{
   fill: #0f172a;
+}
+
+@media (prefers-color-scheme: dark){
+  .social-icon.polywork svg rect, .social-icon.polywork svg path{
+    fill: #f1f5f9;
+  }
 }
 
 .social-icon.polywork:hover svg rect, .social-icon.polywork:hover svg path{
@@ -824,7 +830,14 @@ a:focus-visible, .focus-link:focus-visible{
   padding-left: 0.75rem;
   font-style: italic;
   --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark){
+  .article blockquote{
+    --tw-text-opacity: 1;
+    color: rgb(148 163 184 / var(--tw-text-opacity));
+  }
 }
 
 .article blockquote.ltag__twitter-tweet{
@@ -1408,10 +1421,6 @@ a:focus-visible, .focus-link:focus-visible{
   padding-bottom: 0px;
 }
 
-.pl-2{
-  padding-left: 0.5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1709,11 +1718,6 @@ a:focus-visible, .focus-link:focus-visible{
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
