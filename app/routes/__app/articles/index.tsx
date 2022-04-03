@@ -64,7 +64,7 @@ export default function Articles() {
               </p>
             </div>
 
-            <div className="mt-auto w-full p-6">
+            <div className="mt-auto flex w-full space-x-3 p-6">
               <Link to={`/articles/${article.id}`} className="button">
                 Read More
               </Link>
