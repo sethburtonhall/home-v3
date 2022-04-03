@@ -6,7 +6,7 @@ interface CardFooterProps {
 
 export default function CardFooter({ type }: CardFooterProps) {
   return (
-    <div className="mt-auto flex space-x-3 p-6">
+    <div className="mt-auto flex w-full space-x-3 p-6">
       <a
         href={type.html_url}
         target="_blank"
