@@ -51,7 +51,7 @@ export default function OtherProjects() {
               title="Artist Rescue Trust"
             >
               <span>{project.title}</span>
-              <span className="pl-2 text-sm text-gray-500 dark:text-gray-400">
+              <span className="text-sm text-gray-500 dark:text-gray-400">
                 {project.stack}
               </span>
             </a>
