@@ -586,8 +586,8 @@ a:focus-visible, .focus-link:focus-visible{
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -607,6 +607,13 @@ a:focus-visible, .focus-link:focus-visible{
   .button{
     --tw-text-opacity: 1;
     color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 768px){
+  .button{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1182,10 +1189,6 @@ a:focus-visible, .focus-link:focus-visible{
 
 .items-center{
   align-items: center;
-}
-
-.justify-start{
-  justify-content: flex-start;
 }
 
 .justify-end{
