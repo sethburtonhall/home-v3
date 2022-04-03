@@ -33,7 +33,7 @@ export default function CardBody({ type, tag }: CardBodyProps) {
         {type.name}
       </a>
 
-      <p className="text-sm text-gray-600 dark:text-gray-400">
+      <p className="text-xs text-gray-600 dark:text-gray-400">
         {type.description}
       </p>
     </div>

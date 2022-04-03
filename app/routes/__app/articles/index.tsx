@@ -56,10 +56,10 @@ export default function Articles() {
               >
                 {article.title}
               </Link>
-              <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
+              <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
                 {article.readable_publish_date}
               </p>
-              <p className="mb-2 text-xl text-gray-600 dark:text-gray-400">
+              <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
                 {article.description}
               </p>
             </div>
