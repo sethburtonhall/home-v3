@@ -14,7 +14,10 @@ export default function CardBody({ type, tag }: CardBodyProps) {
     <div className="flex flex-col p-6">
       <div className="mb-2 flex w-full flex-wrap">
         {filteredTopics.map((topic: string, index: number) => (
-          <span key={index} className="mr-2 text-sm font-medium text-blue-400">
+          <span
+            key={index}
+            className="mr-2 text-base font-medium text-blue-400"
+          >
             #{topic}
           </span>
         ))}
@@ -30,7 +33,7 @@ export default function CardBody({ type, tag }: CardBodyProps) {
         {type.name}
       </a>
 
-      <p className="text-sm text-gray-600 dark:text-gray-400 md:text-base">
+      <p className="text-sm text-gray-600 dark:text-gray-400">
         {type.description}
       </p>
     </div>
