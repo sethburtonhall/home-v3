@@ -1425,10 +1425,6 @@ a:focus-visible, .focus-link:focus-visible{
   text-align: center;
 }
 
-.text-justify{
-  text-align: justify;
-}
-
 .font-terminal{
   font-family: Inconsolata, monospace;
 }
@@ -1456,9 +1452,9 @@ a:focus-visible, .focus-link:focus-visible{
   line-height: 1.75rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-2xl{
@@ -1471,9 +1467,9 @@ a:focus-visible, .focus-link:focus-visible{
   line-height: 2.25rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xs{
@@ -1617,6 +1613,18 @@ a:focus-visible, .focus-link:focus-visible{
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+}
+
+.Typewriter__wrapper{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 1024px){
+  .Typewriter__wrapper{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 .hover\:bg-black:hover{

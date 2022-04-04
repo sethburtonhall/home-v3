@@ -76,24 +76,6 @@ export default function Hero() {
           <p className="text-2xl">
             🥯 🥓 <span className="text-3xl">☕</span>
           </p>
-          {/* <span className="text-blue-500">Seths-MacBook-Pro:~</span>
-          <br />
-          <span>$ yarn add bio</span>
-          <br />
-          <p className="text-justify">
-            I currently live in the mountains of North Carolina. When I am not
-            coding I am hanging with my wife and two kids, playing outside or I
-            am Connect with me on{' '}
-            <a
-              href="https://twitter.com/sethburtonhall"
-              target="_blank"
-              rel="noopener"
-              className="text-blue-500"
-            >
-              Twitter
-            </a>
-            .
-          </p> */}
           <span className="text-blue-500">Seths-MacBook-Pro:~</span>
           {/* see repo for options: https://github.com/tameemsafi/typewriterjs */}
           <div className="flex text-lg">

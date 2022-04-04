@@ -201,3 +201,7 @@
 .active {
   @apply bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent;
 }
+
+.Typewriter__wrapper {
+  @apply text-sm lg:text-lg;
+}
