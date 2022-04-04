@@ -203,5 +203,5 @@
 }
 
 .Typewriter__wrapper {
-  @apply text-lg;
+  @apply text-xl;
 }
