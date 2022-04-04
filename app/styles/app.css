@@ -1616,15 +1616,8 @@ a:focus-visible, .focus-link:focus-visible{
 }
 
 .Typewriter__wrapper{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-@media (min-width: 1024px){
-  .Typewriter__wrapper{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .hover\:bg-black:hover{
