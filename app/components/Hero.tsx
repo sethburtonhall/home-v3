@@ -5,7 +5,9 @@ export default function Hero() {
   return (
     <div className="mx-auto flex w-full flex-col items-center xl:w-2/3">
       {/* Intro */}
-      <h1 className="mb-6 text-4xl md:text-5xl">Hey Y'all!</h1>
+      <h1 className="mb-6 w-full text-center text-4xl md:text-5xl">
+        Hey Y'all!
+      </h1>
       {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
       <p className="mb-6 text-base md:mb-12 md:text-xl">
         My name is Seth Hall. I am a front end focused web developer from North
