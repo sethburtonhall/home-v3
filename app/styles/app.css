@@ -1730,6 +1730,11 @@ a:focus-visible, .focus-link:focus-visible{
   .lg\:w-3\/4{
     width: 75%;
   }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1280px){

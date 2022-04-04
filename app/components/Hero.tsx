@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Intro */}
       <h1 className="mb-6 text-4xl md:text-5xl">Hey Y'all!</h1>
       {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
-      <p className="mb-6 text-justify text-lg md:mb-12 md:text-xl">
+      <p className="mb-6 text-base md:mb-12 md:text-xl">
         My name is Seth Hall. I am a front end focused web developer from North
         Carolina (soon to be a traveling digital nomad). I value authentic
         communication and creative collaboration and believe a workplace should
@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="mr-2 h-4 w-4 rounded-full bg-yellow-500"></div>
           <div className="mf-2 h-4 w-4 rounded-full bg-green-500"></div>
         </div>
-        <div className="mb-12 rounded-md bg-slate-900 p-4 pt-10 text-slate-50">
+        <div className="mb-12 rounded-md bg-slate-900 p-4 pt-10 text-base text-slate-50 lg:text-lg">
           <span>
             Last login: {Moment().format('ddd MMM DD HH:mm:ss')} on 💻
           </span>
