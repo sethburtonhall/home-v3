@@ -94,7 +94,7 @@ export default function Hero() {
           </p> */}
           <span className="text-blue-500">Seths-MacBook-Pro:~</span>
           {/* see repo for options: https://github.com/tameemsafi/typewriterjs */}
-          <div className="flex text-base lg:text-lg ">
+          <div className="flex text-lg">
             <span className="mr-2">$</span>
             <Typewriter
               options={{
