@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="mr-2 h-4 w-4 rounded-full bg-yellow-500"></div>
           <div className="mf-2 h-4 w-4 rounded-full bg-green-500"></div>
         </div>
-        <div className="mb-12 rounded-md bg-slate-900 p-4 pt-10 text-base text-slate-50 lg:text-lg">
+        <div className="mb-12 rounded-md bg-slate-900 p-4 pt-10 text-sm text-slate-50 lg:text-lg">
           <span>
             Last login: {Moment().format('ddd MMM DD HH:mm:ss')} on 💻
           </span>
@@ -94,7 +94,7 @@ export default function Hero() {
           </p> */}
           <span className="text-blue-500">Seths-MacBook-Pro:~</span>
           {/* see repo for options: https://github.com/tameemsafi/typewriterjs */}
-          <div className="flex">
+          <div className="flex text-base lg:text-lg ">
             <span className="mr-2">$</span>
             <Typewriter
               options={{
