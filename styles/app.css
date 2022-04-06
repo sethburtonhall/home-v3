@@ -202,6 +202,6 @@
   @apply bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent;
 }
 
-.Typewriter__wrapper {
-  @apply text-xl;
-}
+/* .Typewriter__wrapper {
+  @apply lg:text-lg;
+} */

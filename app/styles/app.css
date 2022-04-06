@@ -1462,11 +1462,6 @@ a:focus-visible, .focus-link:focus-visible{
   line-height: 2rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1615,10 +1610,9 @@ a:focus-visible, .focus-link:focus-visible{
   color: transparent;
 }
 
-.Typewriter__wrapper{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
+/* .Typewriter__wrapper {
+  @apply lg:text-lg;
+} */
 
 .hover\:bg-black:hover{
   --tw-bg-opacity: 1;
@@ -1720,6 +1714,11 @@ a:focus-visible, .focus-link:focus-visible{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1735,6 +1734,16 @@ a:focus-visible, .focus-link:focus-visible{
   .lg\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
