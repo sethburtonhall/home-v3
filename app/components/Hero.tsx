@@ -23,7 +23,7 @@ export default function Hero() {
           Uniform
         </a>
         . When I am not coding, I am usually embarking on epic adventures with
-        my wife and kids. You can also find me hanging out on{' '}
+        my wife and kids. You can also find me on{' '}
         <a
           href="https://twitter.com/sethburtonhall"
           target="_blank"
@@ -43,12 +43,12 @@ export default function Hero() {
         </a>
         ,{' '}
         <a
-          href="https://jamstack.org/"
+          href="https://discord.com/invite/jamstack"
           target="_blank"
           rel="noopener"
           className="styled-link"
         >
-          Jamstack.
+          and Jamstack.
         </a>
       </p>
 
