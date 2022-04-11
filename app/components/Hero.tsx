@@ -39,7 +39,7 @@ export default function Hero() {
           rel="noopener"
           className="styled-link"
         >
-          VC Slack
+          Virtual Coffee
         </a>
         ,{' '}
         <a
@@ -48,7 +48,7 @@ export default function Hero() {
           rel="noopener"
           className="styled-link"
         >
-          Jamstack Discord.
+          Jamstack.
         </a>
       </p>
 
