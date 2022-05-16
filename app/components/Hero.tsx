@@ -11,10 +11,10 @@ export default function Hero() {
       {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
       <p className="mb-6 text-base md:mb-12 md:text-xl">
         My name is Seth Hall. I am a front end focused web developer from North
-        Carolina (soon to be a traveling digital nomad). I value authentic
-        communication and creative collaboration and believe a workplace should
-        be supportive and empowering. I am currently working in the Jamstack as
-        a Demo Engineer at
+        Carolina (<i>soon to be a traveling digital nomad</i> 🛻 🚌 🏕 💻 🏞️ 🥾).
+        I value authentic communication and creative collaboration and believe a
+        workplace should be supportive and empowering. I am currently working in
+        the Jamstack as a Technical Product Owner at
         <a
           href="https://uniform.dev/"
           target="_blank"
