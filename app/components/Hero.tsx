@@ -10,8 +10,7 @@ export default function Hero() {
       </h1>
       {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
       <p className="mb-6 text-base md:mb-12 md:text-xl">
-        My name is Seth Hall. I am a front end focused web developer from North
-        Carolina (<i>soon to be a traveling digital nomad</i> 🛻 🚌 🏕 💻 🏞️ 🥾).
+        My name is Seth Hall. I am a Frontend Developer turned Product Owner.
         I value authentic communication and creative collaboration and believe a
         workplace should be supportive and empowering. I am currently working in
         the Jamstack as a Technical Product Owner at
@@ -22,7 +21,7 @@ export default function Hero() {
         >
           Uniform
         </a>
-        . When I am not coding, I am usually embarking on epic adventures with
+        . When I am not working, I am on epic adventures with
         my wife and kids. You can also find me on{' '}
         <a
           href="https://twitter.com/sethburtonhall"
