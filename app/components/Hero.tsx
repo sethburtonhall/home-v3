@@ -11,18 +11,9 @@ export default function Hero() {
       {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
       <p className="mb-6 text-base md:mb-12 md:text-xl">
         {/* (<i>soon to be a digital nomad</i> 🛻 🚌 🏕 💻 🏞️ 🥾) */}
-        I am a Frontend Developer turned Product Owner.
+        I am a Web Developer turned Technical Product Owner.
         I value authentic communication and creative collaboration and believe a
-        workplace should be supportive and empowering. I am currently working in
-        the Jamstack as a Technical Product Owner at
-        <a
-          href="https://uniform.dev/"
-          target="_blank"
-          className="styled-link ml-1"
-        >
-          Uniform
-        </a>
-        . You can find me online at{' '}
+        workplace should be supportive and empowering. I am currently available for work. You can find me online at{' '}
         <a
           href="https://twitter.com/sethburtonhall"
           target="_blank"
@@ -31,24 +22,16 @@ export default function Hero() {
         >
           Twitter
         </a>
-        ,{' '}
+        {' '} or {' '}
         <a
-          href="https://virtualcoffee.io/"
+          href="https://www.linkedin.com/in/sethburtonhall/"
           target="_blank"
           rel="noopener"
           className="styled-link"
         >
-          Virtual Coffee
+          LinkedIn
         </a>
-        ,{' '}
-        <a
-          href="https://discord.com/invite/jamstack"
-          target="_blank"
-          rel="noopener"
-          className="styled-link"
-        >
-          and Jamstack.
-        </a>
+        . {' '}
       </p>
 
       {/* Terminal */}
