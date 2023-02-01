@@ -9,7 +9,7 @@ export default function Showcase({ showcases }: { showcases: repoProps[] }) {
     <div>
       <div className="mb-6 flex items-center space-x-1">
         <ColorSwatchIcon className="h-7 w-7" />
-        <h2>Projects</h2>
+        <h2>Web Projects</h2>
       </div>
       <div className="card-grid">
         {showcases.map((showcase: repoProps) => {
