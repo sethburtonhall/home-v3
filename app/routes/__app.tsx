@@ -1,4 +1,4 @@
-import { Outlet } from 'remix';
+  import { Outlet } from ‘remix’;
 
 import { Header, Footer } from '~/components';
 
