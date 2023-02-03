@@ -12,10 +12,7 @@ export default function Hero() {
       <p className="mb-6 text-base md:text-xl">
         I am a multi-hyphenate creative (Film Producer-Web Developer-Technical Product Owner-Journeyman) currently working from the road while traveling with my family in a vintage 1994 Airstream Classic. 🛻 🏕 💻 🏞️</p>
       <p className="mb-6 text-base md:text-xl">
-        I value authentic communication and creative collaboration and believe a workplace should be supportive and empowering. I am currently looking for my next team and adventure.
-      </p>
-      <p className="mb-6 text-base md:mb-12 md:text-xl">
-      You can find me online at{' '}
+        I value authentic communication and creative collaboration and believe a workplace should be supportive and empowering. I am currently looking for my next team and adventure. You can find me online at{' '}
         <a
           href="https://twitter.com/sethburtonhall"
           target="_blank"
