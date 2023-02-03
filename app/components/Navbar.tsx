@@ -23,7 +23,7 @@ let navigationItems = [
   },
   {
     id: 2,
-    label: 'Projects ',
+    label: 'Web',
     href: '/projects',
   },
     {
