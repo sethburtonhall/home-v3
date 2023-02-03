@@ -19,11 +19,11 @@ let navigationItems = [
   {
     id: 1,
     label: 'Articles',
-    href: '/articles',
+    href: '/articles',  
   },
   {
     id: 2,
-    label: 'Projects',
+    label: 'Projects ',
     href: '/projects',
   },
     {
