@@ -19,7 +19,7 @@ export default function Hero() {
         >
           Twitter
         </a>
-        {' '} or {' '}
+        {' '},{' '}
         <a
           href="https://www.instagram.com/sethburtonhall/"
           target="_blank"
