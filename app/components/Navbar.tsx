@@ -18,7 +18,7 @@ let logo = (
 let navigationItems = [
   {
     id: 1,
-    label: 'Articles',
+    label: 'Article',
     href: '/articles',  
   },
   {
@@ -28,7 +28,7 @@ let navigationItems = [
   },
     {
     id: 3,
-    label: 'Other',
+    label: 'Others',
     href: '/other-creative',
   },
 ];
