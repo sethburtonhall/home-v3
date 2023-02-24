@@ -38,7 +38,7 @@ export default function OtherProjects() {
     <div>
       <div className="mb-6 flex items-center space-x-1">
         <DatabaseIcon className="h-7 w-7" />
-        <h2>Other Projects</h2>
+        <h2>Other Web Projects</h2>
       </div>
       <ul className="flex flex-col space-y-4">
         {otherProjects.map((project) => (
