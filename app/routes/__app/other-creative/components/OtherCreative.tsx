@@ -1,58 +1,58 @@
-import { DatabaseIcon } from '@heroicons/react/outline';
+import { PaintBrushIcon } from '@heroicons/react/outline';
 
-const otherProjects = [
+const otherCreative = [
   {
     id: 1,
     title: 'This Website!!',
-    stack: 'Remix, Tailwind, GithubAPI, DevAPI, Cloudinary, Netlify',
     url: 'https://sethhall.dev',
+    description: "This is a description"
   },
   {
     id: 2,
     title: 'Artist Rescue Trust',
-    stack: 'DatoCMS, Gatsby, GraphQL, Netlify',
     url: 'https://artistrescue.org/',
+    description: "This is a description"
   },
   {
     id: 3,
     title: 'Technology Venture Partners',
-    stack: 'CloudCannon, Jekyll',
     url: 'https://tvp.com/',
+    description: "This is a description"
   },
   {
     id: 4,
     title: 'Protege',
-    stack: 'NextJS, Tailwind, Firebase, Vercel',
     url: 'https://protege.dev/',
+    description: "This is a description"
   },
   {
     id: 5,
     title: 'Ushahidi',
-    stack: 'CraftCMS, Twig, Vanilla HTML/CSS/JS',
     url: 'https://ushahidi.com/',
+    description: "This is a description"
   },
 ];
 
-export default function OtherProjects() {
+export default function OtherCreative() {
   return (
     <div>
       <div className="mb-6 flex items-center space-x-1">
-        <DatabaseIcon className="h-7 w-7" />
-        <h2>Other Projects</h2>
+        <PaintBrushIcon className="h-7 w-7" />
+        <h2>Creative Projects</h2>
       </div>
       <ul className="flex flex-col space-y-4">
-        {otherProjects.map((project) => (
+        {otherCreative.map((project) => (
           <li key={project.id}>
             <a
               className="link flex flex-col"
               href={project.url}
               target="_blank"
               rel="noopener"
-              title="Artist Rescue Trust"
+              title={project.title}
             >
               <span>{project.title}</span>
               <span className="text-sm text-gray-500 dark:text-gray-400">
-                {project.stack}
+                {project.description}
               </span>
             </a>
           </li>
