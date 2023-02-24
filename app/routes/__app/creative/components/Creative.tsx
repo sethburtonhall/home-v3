@@ -1,5 +1,7 @@
 import { ColorSwatchIcon } from '@heroicons/react/outline';
 
+import { CardImage, CardBody, CardFooter } from './Card';
+
 const creativeProjects = [
   {
     id: 1,
@@ -34,24 +36,17 @@ export default function CreativeProjects() {
         <ColorSwatchIcon className="h-7 w-7" />
         <h2>Creative Projects</h2>
       </div>
-      <ul className="flex flex-col space-y-4">
-        {creativeProjects.map((project) => (
-          <li key={project.id}>
-            <a
-              className="link flex flex-col"
-              href={project.url}
-              target="_blank"
-              rel="noopener"
-              title={project.title}
-            >
-              <span>{project.title}</span>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                {project.description}
-              </span>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <div className="card-grid">
+        {creativeProjects.map((project) => {
+          return (
+            <div key={project.id} className="card flex flex-col">
+              <CardImage type={project} imagePath="projects" />
+              <CardBody type={project} />
+              <CardFooter type={project} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
