@@ -1,4 +1,4 @@
-import { PaintBrushIcon } from '@heroicons/react/outline';
+import { PaintbrushIcon } from '@heroicons/react/outline';
 
 const creative = [
   {
