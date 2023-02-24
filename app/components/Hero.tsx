@@ -55,18 +55,18 @@ export default function Hero() {
             Last login: {Moment().format('ddd MMM DD HH:mm:ss')} on 💻
           </span>
           <br />
-          <span className="text-blue-500">Seths-MacBook-Pro:~</span>
+          <span className="text-blue-500">MacBook-Pro:~</span>
           <br />
           <span>$ yawn add 😕 ... 🥱</span>
           <br />
-          <span className="text-blue-500">Seths-MacBook-Pro:~</span>
+          <span className="text-blue-500">MacBook-Pro:~</span>
           <br />
           <span>$ yarn add @breakfast</span>
           <br />
           <p className="text-xl lg:text-2xl">
             🥯 🥓 <span className="text-2xl lg:text-3xl">☕</span>
           </p>
-          <span className="text-blue-500">Seths-MacBook-Pro:~</span>
+          <span className="text-blue-500">MacBook-Pro:~</span>
           {/* see repo for options: https://github.com/tameemsafi/typewriterjs */}
           <div className="flex">
             <span className="mr-2">$</span>

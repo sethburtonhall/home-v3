@@ -5,7 +5,7 @@ const creativeProjects = [
     id: 1,
     title: 'Hall Pictures',
     url: '',
-    description: "My Creative Producer Development Slate"
+    description: "My Creative Producer development slate"
   },
   {
     id: 2,
@@ -34,7 +34,6 @@ export default function CreativeProjects() {
         <ColorSwatchIcon className="h-7 w-7" />
         <h2>Creative Projects</h2>
       </div>
-      <p className="mb-6">As a multi-hyphenate creative I have been involved in many different projects. Below are a few of these.</p>
       <ul className="flex flex-col space-y-4">
         {creativeProjects.map((project) => (
           <li key={project.id}>
