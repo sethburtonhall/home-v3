@@ -17,7 +17,7 @@ const creativeProjects = [
   },
   {
     id: 3,
-    title: 'Holy Smokes!!',
+    title: 'Holy Smokes!',
     url: 'https://www.dropbox.com/sh/55s3y33riutfmlc/AACYa1dKcquc8S6s0Pi1fPPwa?dl=0',
     description: "A limited run comic strip from the minds of Seth Hall and Hugh Greene"
   },
@@ -40,7 +40,7 @@ export default function CreativeProjects() {
         {creativeProjects.map((project) => {
           return (
             <div key={project.id} className="card flex flex-col">
-              <CardImage type={project} imagePath="projects" />
+              <CardImage type={project} />
               <CardBody type={project} />
               <CardFooter type={project} />
             </div>

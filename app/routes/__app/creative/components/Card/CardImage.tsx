@@ -7,7 +7,7 @@ import {
 } from '@cloudinary/react';
 
 
-export default function CardImage(type, imagePath) {
+export default function CardImage(type) {
   const image = new CloudinaryImage(
     `home-v3/projects/${
       type.title
