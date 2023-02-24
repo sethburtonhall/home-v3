@@ -26,11 +26,11 @@ let navigationItems = [
     label: 'Web',
     href: '/web',
   },
-    {
-    id: 3,
-    label: 'Articles',
-    href: '/articles',  
-  },
+  // {
+  //   id: 3,
+  //   label: 'Articles',
+  //   href: '/articles',  
+  // },
 ];
 
 let navigation = navigationItems.map((link) => (
