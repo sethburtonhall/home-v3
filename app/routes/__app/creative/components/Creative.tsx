@@ -33,8 +33,8 @@ export default function CreativeProjects() {
       <div className="mb-6 flex items-center space-x-1">
         <ColorSwatchIcon className="h-7 w-7" />
         <h2>Creative Projects</h2>
-        <p>As a multi-hyphenate creative I have been involved in many different projects. Below are a few of these.</p>
       </div>
+      <p>As a multi-hyphenate creative I have been involved in many different projects. Below are a few of these.</p>
       <ul className="flex flex-col space-y-4">
         {creativeProjects.map((project) => (
           <li key={project.id}>
