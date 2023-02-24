@@ -26,18 +26,18 @@ export const links: LinksFunction = () => {
 };
 
 export const meta: MetaFunction = () => {
-  const description = 'Seth Hall | Web Developer';
+  const description = 'Seth Hall | Multi-Hyphenate Creative';
 
   return {
     title: description,
     description,
-    keywords: 'Seth Hall, web developer',
+    keywords: 'Seth Hall, multi-hyphenate creative, creative producer, web developer, product owner, film, music, web',
     'twitter:image':
       'https://res.cloudinary.com/seth-hall/image/upload/v1648303308/home-v3/social.png',
     'twitter:card': 'summary_large_image',
     'twitter:creator': '@sethburtonhall',
     'twitter:site': '@sethburtonhall',
-    'twitter:title': 'Seth Hall | Web Developer',
+    'twitter:title': 'Seth Hall | Multi-Hyphenate Creative',
     'twitter:description': description,
   };
 };

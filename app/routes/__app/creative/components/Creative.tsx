@@ -1,6 +1,6 @@
 import { PaintBrushIcon } from '@heroicons/react/outline';
 
-const otherCreative = [
+const creative = [
   {
     id: 1,
     title: 'This Website!!',
@@ -33,7 +33,7 @@ const otherCreative = [
   },
 ];
 
-export default function OtherCreative() {
+export default function Creative() {
   return (
     <div>
       <div className="mb-6 flex items-center space-x-1">
@@ -41,7 +41,7 @@ export default function OtherCreative() {
         <h2>Creative Projects</h2>
       </div>
       <ul className="flex flex-col space-y-4">
-        {otherCreative.map((project) => (
+        {creative.map((project) => (
           <li key={project.id}>
             <a
               className="link flex flex-col"

@@ -18,18 +18,18 @@ let logo = (
 let navigationItems = [
   {
     id: 1,
-    label: 'Articles',
-    href: '/articles',  
+    label: 'Creative',
+    href: '/creative',
   },
   {
     id: 2,
-    label: 'Projects',
-    href: '/projects',
+    label: 'Web',
+    href: '/web',
   },
     {
     id: 3,
-    label: 'Other',
-    href: '/other-creative',
+    label: 'Articles',
+    href: '/articles',  
   },
 ];
 
