@@ -1,7 +1,8 @@
 import { useLoaderData } from 'remix';
 import type { LoaderFunction } from 'remix';
 
-import { Showcase, ShortStacks, OtherProjects } from './components';
+import { Terminal, Showcase, ShortStacks, OtherProjects } from './components';
+
 
 export type repoProps = {
   id: string;
@@ -39,6 +40,7 @@ export default function Projects() {
   const { showcases, shortstacks } = useLoaderData();
   return (
     <div className="flex flex-col space-y-12">
+      <Terminal />
       <Showcase showcases={showcases} />
       <ShortStacks shortstacks={shortstacks} />
       <OtherProjects />
