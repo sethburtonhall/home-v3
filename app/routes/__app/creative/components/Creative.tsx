@@ -1,4 +1,4 @@
-import { PaintbrushIcon } from '@heroicons/react/outline';
+import { ColorSwatchIcon } from '@heroicons/react/outline';
 
 const creativeProjects = [
   {
@@ -37,7 +37,7 @@ export default function CreativeProjects() {
   return (
     <div>
       <div className="mb-6 flex items-center space-x-1">
-        <PaintbrushIcon className="h-7 w-7" />
+        <ColorSwatchIcon className="h-7 w-7" />
         <h2>Creative Projects</h2>
       </div>
       <ul className="flex flex-col space-y-4">
