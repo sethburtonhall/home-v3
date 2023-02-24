@@ -3,33 +3,27 @@ import { ColorSwatchIcon } from '@heroicons/react/outline';
 const creativeProjects = [
   {
     id: 1,
-    title: 'This Website!!',
-    url: 'https://sethhall.dev',
-    description: "This is a description"
+    title: 'Hall Pictures',
+    url: '',
+    description: "My Creative Producer Development Slate"
   },
   {
     id: 2,
-    title: 'Artist Rescue Trust',
-    url: 'https://artistrescue.org/',
-    description: "This is a description"
+    title: 'Misc Music',
+    url: '',
+    description: "A selection of my music"
   },
   {
     id: 3,
-    title: 'Technology Venture Partners',
-    url: 'https://tvp.com/',
-    description: "This is a description"
+    title: 'Holy Smokes!!',
+    url: '',
+    description: "A limited run comic strip from the minds of Seth Hall and Hugh Greene"
   },
   {
     id: 4,
-    title: 'Protege',
-    url: 'https://protege.dev/',
-    description: "This is a description"
-  },
-  {
-    id: 5,
-    title: 'Ushahidi',
-    url: 'https://ushahidi.com/',
-    description: "This is a description"
+    title: 'Creative Producer IG',
+    url: 'https://www.instagram.com/the.creative.producer/?hl=en',
+    description: "Genuine stories, practical insight and inspirational victories from the unsung heroes of independent film"
   },
 ];
 
@@ -39,6 +33,7 @@ export default function CreativeProjects() {
       <div className="mb-6 flex items-center space-x-1">
         <ColorSwatchIcon className="h-7 w-7" />
         <h2>Creative Projects</h2>
+        <p>As a multi-hyphenate creative I have been involved in many different projects. Below are a few of these.</p>
       </div>
       <ul className="flex flex-col space-y-4">
         {creativeProjects.map((project) => (
