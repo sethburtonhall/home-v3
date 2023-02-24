@@ -4,7 +4,7 @@ const creativeProjects = [
   {
     id: 1,
     title: 'Hall Pictures',
-    url: '',
+    url: 'https://www.dropbox.com/s/o7nn7n83e1w8e97/Development_Slate.pdf?dl=0',
     description: "My Creative Producer development slate"
   },
   {
@@ -16,7 +16,7 @@ const creativeProjects = [
   {
     id: 3,
     title: 'Holy Smokes!!',
-    url: '',
+    url: 'https://www.dropbox.com/sh/55s3y33riutfmlc/AACYa1dKcquc8S6s0Pi1fPPwa?dl=0',
     description: "A limited run comic strip from the minds of Seth Hall and Hugh Greene"
   },
   {
