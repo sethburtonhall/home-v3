@@ -39,8 +39,8 @@ export const loader: LoaderFunction = async () => {
 export default function Projects() {
   const { showcases, shortstacks } = useLoaderData();
   return (
+    <Terminal />
     <div className="flex flex-col space-y-12">
-      <Terminal />
       <Showcase showcases={showcases} />
       <ShortStacks shortstacks={shortstacks} />
       <OtherProjects />
