@@ -40,7 +40,7 @@ export default function CreativeProjects() {
         {creativeProjects.map((project) => {
           return (
             <div key={project.id} className="card flex flex-col">
-              <CardImage />
+              <CardImage type={project}/>
               <CardBody title={project.title} url={project.url} description={project.description} />
               <CardFooter url={project.url} />
             </div>
