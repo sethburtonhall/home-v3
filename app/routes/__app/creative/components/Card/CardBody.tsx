@@ -6,7 +6,7 @@ export default function CardBody({project}) {
         href={project.url}
         target="_blank"
         rel="noopener"
-        title={projet.title}
+        title={project.title}
         className="link text-2xl"
       >
         {project.title}
