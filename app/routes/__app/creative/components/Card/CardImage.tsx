@@ -25,7 +25,7 @@ export default function CardImage({project}) {
         // responsive({ steps: [1000, 800] }),
         placeholder(),
       ]}
-      alt={type.title}
+      alt={project.title}
       className="h-64 w-full object-cover"
     />
   );
