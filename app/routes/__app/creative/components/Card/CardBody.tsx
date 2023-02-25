@@ -1,4 +1,4 @@
-export default function CardBody(title, url, description) {
+export default function CardBody({title, url, description}) {
 
   return (
     <div className="flex flex-col p-6">
