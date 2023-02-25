@@ -11,7 +11,7 @@ const creativeProjects = [
   },
   {
     id: 2,
-    title: 'Misc Music',
+    title: 'Music',
     url: '',
     description: "A selection of my music"
   },
