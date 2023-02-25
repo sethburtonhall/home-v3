@@ -1,19 +1,19 @@
-export default function CardBody({title, url, description}) {
+export default function CardBody({project}) {
 
   return (
     <div className="flex flex-col p-6">
       <a
-        href={url}
+        href={project.url}
         target="_blank"
         rel="noopener"
-        title={title}
+        title={projet.title}
         className="link text-2xl"
       >
-        {title}
+        {project.title}
       </a>
 
       <p className="text-xs text-gray-600 dark:text-gray-400">
-        {description}
+        {project.description}
       </p>
     </div>
   );

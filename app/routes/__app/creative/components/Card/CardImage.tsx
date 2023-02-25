@@ -7,10 +7,10 @@ import {
 } from '@cloudinary/react';
 
 
-export default function CardImage({type}) {
+export default function CardImage({project}) {
   const image = new CloudinaryImage(
     `home-v3/projects/${
-      type.title
+      project.title
     }`,
     {
       cloudName: 'seth-hall',
