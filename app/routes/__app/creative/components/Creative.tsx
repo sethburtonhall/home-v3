@@ -25,7 +25,7 @@ const creativeProjects = [
     id: 4,
     title: 'Creative Producer IG',
     url: 'https://www.instagram.com/the.creative.producer/?hl=en',
-    description: "Genuine stories, practical insight and inspirational victories from the unsung heroes of independent film"
+    description: "Genuine stories, practical insight, and inspirational victories from the unsung heroes of independent film"
   },
 ];
 
