@@ -7,7 +7,7 @@ const creativeProjects = [
     id: 1,
     title: 'Hall Pictures',
     url: 'https://www.dropbox.com/s/o7nn7n83e1w8e97/Development_Slate.pdf?dl=0',
-    description: "My Creative Producer development slate"
+    description: "My film development slate"
   },
   {
     id: 2,
