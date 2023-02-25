@@ -1,19 +1,19 @@
-export default function CardBody(type) {
+export default function CardBody(title, url, description) {
 
   return (
     <div className="flex flex-col p-6">
       <a
-        href={type.url}
+        href={url}
         target="_blank"
         rel="noopener"
-        title={type.title}
+        title={title}
         className="link text-2xl"
       >
-        {type.title}
+        {title}
       </a>
 
       <p className="text-xs text-gray-600 dark:text-gray-400">
-        {type.description}
+        {description}
       </p>
     </div>
   );

@@ -41,8 +41,8 @@ export default function CreativeProjects() {
           return (
             <div key={project.id} className="card flex flex-col">
               {/* <CardImage type={project} /> */}
-              <CardBody type={project} />
-              <CardFooter type={project} />
+              <CardBody title={project.title} url={project.url} description={project.description} />
+              {/* <CardFooter type={project} /> */}
             </div>
           );
         })}
