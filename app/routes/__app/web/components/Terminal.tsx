@@ -3,8 +3,8 @@ import Typewriter from 'typewriter-effect';
 
 export default function Terminal() {
     return (
-    <div className="relative w-full font-terminal z-10">
-      <div className="absolute w-full rounded-md rounded-b-none border-t-[32px] border-slate-800"></div>
+    <div className="relative w-full font-terminal">
+      <div className="absolute w-full rounded-md rounded-b-none border-t-[32px] border-slate-800 z-10"></div>
       <div className="absolute flex p-2">
         <div className="mr-2 h-4 w-4 rounded-full bg-red-500"></div>
         <div className="mr-2 h-4 w-4 rounded-full bg-yellow-500"></div>
