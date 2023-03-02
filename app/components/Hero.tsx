@@ -6,7 +6,7 @@ export default function Hero() {
         Hey Y'all!
       </h1>
       {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
-      <p className="mb-6 text-base md:text-xl">
+      <p className="text-base md:text-xl">
         I am a multi-hyphenate creative (Film Producer-Web Developer-Technical Product Owner-Journeyman) currently working from the road while traveling with my family in a vintage Airstream Classic. 💻 🏞️ I value authentic communication and creative collaboration and believe a workplace should be supportive and empowering. I am currently looking for my next team and adventure. You can find me online at{' '}
         <a
           href="https://www.linkedin.com/in/sethburtonhall/"
