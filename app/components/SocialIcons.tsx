@@ -3,7 +3,7 @@ import { AtSymbolIcon } from '@heroicons/react/outline';
 // HeroIcons React: https://unpkg.com/browse/@heroicons/react@1.0.5/outline/
 export default function SocialIcons() {
   return (
-    <div className="order-2 flex w-[250px] items-center md:order-1 md:mb-0">
+    <div className="order-2 flex w-[250px] items-center justify-center md:order-1 md:mb-0">
       <a
         href="https://github.com/sethburtonhall"
         target="_blank"
