@@ -1,6 +1,6 @@
 export default function MadeWith() {
   return (
-    <div className="order-1 mb-6 flex flex-col items-center justify-center md:order-2 md:mb-0 md:flex-row">
+    <div className="mb-6 flex flex-col items-center justify-center md:mb-0 md:flex-row">
       <div className="mb-2 md:mb-0 md:mr-1">
         <a
           href="https://github.com/sethburtonhall/home-v3-frontend"
