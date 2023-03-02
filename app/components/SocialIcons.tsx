@@ -8,7 +8,7 @@ export default function SocialIcons() {
         href="https://github.com/sethburtonhall"
         target="_blank"
         rel="noopener"
-        className="social-icon"
+        className="social-icon mr-4"
         title="Github"
       >
         <span className="sr-only">GitHub</span>
