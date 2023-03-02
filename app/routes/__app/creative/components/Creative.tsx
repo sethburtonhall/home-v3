@@ -27,6 +27,12 @@ const creativeProjects = [
     url: 'https://www.instagram.com/the.creative.producer/?hl=en',
     description: "Genuine stories, practical insight, and inspirational victories from the unsung heroes of independent film"
   },
+  {
+    id: 5,
+    title: 'Virtual Coffee Podcast',
+    url: 'https://virtualcoffee.io/podcast/seth-hall-from-film-production-to-technical-product-owner-a-career-changers-story',
+    description: "A discussion about how my work as a Creative Producer in film translates to software and tech"
+  },
 ];
 
 export default function CreativeProjects() {
