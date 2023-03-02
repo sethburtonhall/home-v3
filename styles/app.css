@@ -61,7 +61,7 @@
 
   /* this class cleans up SocialIcons.tsx */
   .social-icon {
-    @apply text-slate-900 transition hover:text-blue-500 dark:text-slate-100 dark:hover:text-blue-500 lg:mr-4;
+    @apply text-slate-900 transition hover:text-blue-500 dark:text-slate-100 dark:hover:text-blue-500 mr-4;
   }
 
   .social-icon svg {
