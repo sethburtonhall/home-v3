@@ -47,7 +47,7 @@ let navigation = navigationItems.map((link) => (
 
 export default function Navbar() {
   return (
-    <Popover className="relative">
+    <Popover className="relative z-50">
       <div className="flex items-center justify-between p-4" role="banner">
         <div className="flex w-full items-center justify-between">
           {logo}
