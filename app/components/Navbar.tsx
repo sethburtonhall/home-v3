@@ -77,7 +77,7 @@ export default function Navbar() {
       >
         <Popover.Panel
           focus
-          className="absolute inset-x-0 top-0 origin-top-right transform transition md:hidden z-index[1]"
+          className="absolute inset-x-0 top-0 origin-top-right transform transition md:hidden z-[1]"
         >
           <div className="rounded-lg bg-white p-4 shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-slate-900">
             <div className="flex items-center justify-between">
