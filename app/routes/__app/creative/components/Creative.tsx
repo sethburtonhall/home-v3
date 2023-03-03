@@ -11,24 +11,30 @@ const creativeProjects = [
   },
   {
     id: 2,
+    title: 'Tropical Gardens',
+    url: 'https://player.vimeo.com/video/327592520',
+    description: "A short film about love, loss, and one man's obsession to set a putt-putt course record"
+  },
+  {
+    id: 3,
     title: 'Music',
     url: '',
     description: "A selection of my music"
   },
   {
-    id: 3,
+    id: 4,
     title: 'Holy Smokes!',
     url: 'https://www.dropbox.com/sh/55s3y33riutfmlc/AACYa1dKcquc8S6s0Pi1fPPwa?dl=0',
     description: "A limited run comic strip from the minds of Seth Hall and Hugh Greene"
   },
   {
-    id: 4,
+    id: 5,
     title: 'Creative Producer IG',
     url: 'https://www.instagram.com/the.creative.producer/?hl=en',
     description: "Genuine stories, practical insight, and inspirational victories from the unsung heroes of independent film"
   },
   {
-    id: 5,
+    id: 6,
     title: 'Virtual Coffee Podcast',
     url: 'https://virtualcoffee.io/podcast/seth-hall-from-film-production-to-technical-product-owner-a-career-changers-story',
     description: "A discussion about how my work as a Creative Producer in film translates to software and tech"
