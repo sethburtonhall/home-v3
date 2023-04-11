@@ -24,7 +24,7 @@ const creativeProjects = [
   {
     id: 4,
     title: 'Holy Smokes!',
-    url: 'https://holysmokeswebcomic.tumblr.com'
+    url: 'https://holysmokeswebcomic.tumblr.com',
     description: "A limited run comic strip from the minds of Seth Hall and Hugh Greene"
   },
   {
