@@ -18,13 +18,13 @@ const creativeProjects = [
   {
     id: 3,
     title: 'Music',
-    url: '',
+    url: 'https://soundcloud.com/middle8media/sets',
     description: "A selection of my music"
   },
   {
     id: 4,
     title: 'Holy Smokes!',
-    url: 'https://www.dropbox.com/sh/55s3y33riutfmlc/AACYa1dKcquc8S6s0Pi1fPPwa?dl=0',
+    url: 'https://holysmokeswebcomic.tumblr.com'
     description: "A limited run comic strip from the minds of Seth Hall and Hugh Greene"
   },
   {
