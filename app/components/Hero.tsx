@@ -7,7 +7,7 @@ export default function Hero() {
       </h1>
       {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
       <p className="text-base md:text-xl">
-        I am Creative Producer/Project Manager currently working from the road while traveling with my family in a vintage Airstream Classic. 💻 🏞️. You can find me online at{' '}
+        I am Creative Producer/Project Manager/Digital Nomad/Journeyman. You can find me online at{' '}
         <a
           href="https://www.linkedin.com/in/sethburtonhall/"
           target="_blank"
