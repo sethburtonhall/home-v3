@@ -33,7 +33,7 @@ export default function SocialIcons() {
         </svg>
       </a> */}
       {/* <a
-        href="https://www.instagram.com/sethburtonhall/"
+        href="https://www.instagram.com/sethhallcreative/"
         target="_blank"
         rel="noopener"
         className="social-icon"
