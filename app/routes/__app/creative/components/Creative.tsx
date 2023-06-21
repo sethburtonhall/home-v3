@@ -13,7 +13,7 @@ const creativeProjects = [
     id: 2,
     title: 'Film/Video',
     url: 'http://vimeo.com/showcase/5391896',
-    description: "A short film about love, loss, and one man's obsession to set a putt-putt course record"
+    description: "A collection of short films and videos"
   },
   {
     id: 3,
