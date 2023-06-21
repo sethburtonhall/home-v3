@@ -12,7 +12,7 @@ export default function CardBody({project}) {
         {project.title}
       </a>
 
-      <p className="text-xs text-gray-600 dark:text-gray-400">
+      <p className="text-sm text-gray-600 dark:text-gray-400">
         {project.description}
       </p>
     </div>
