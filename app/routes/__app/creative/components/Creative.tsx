@@ -5,14 +5,14 @@ import { CardImage, CardBody, CardFooter } from './Card';
 const creativeProjects = [
   {
     id: 1,
-    title: 'Film',
+    title: 'Development Slate',
     url: 'https://www.dropbox.com/s/o7nn7n83e1w8e97/Development_Slate.pdf?dl=0',
     description: "My film development slate"
   },
   {
     id: 2,
-    title: 'Tropical Gardens',
-    url: 'https://player.vimeo.com/video/327592520',
+    title: 'Film/Video',
+    url: 'http://vimeo.com/showcase/5391896',
     description: "A short film about love, loss, and one man's obsession to set a putt-putt course record"
   },
   {
@@ -23,7 +23,7 @@ const creativeProjects = [
   },
   {
     id: 4,
-    title: 'Holy Smokes!',
+    title: 'Comic Strip',
     url: 'https://holysmokeswebcomic.tumblr.com',
     description: "A limited run comic strip from the minds of Seth Hall and Hugh Greene"
   },
