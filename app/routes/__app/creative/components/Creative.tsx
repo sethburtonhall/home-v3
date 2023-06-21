@@ -11,7 +11,7 @@ const creativeProjects = [
   },
   {
     id: 2,
-    title: 'Film & Video',
+    title: 'Film and Video',
     url: 'http://vimeo.com/showcase/5391896',
     description: "A collection of short films and videos"
   },
