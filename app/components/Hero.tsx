@@ -16,8 +16,8 @@ export default function Hero() {
         >
           LinkedIn
         </a>
-        ,{' '}
-{/*         <a
+{/*        ,{' '}
+         <a
           href="https://www.instagram.com/sethburtonhall/"
           target="_blank"
           rel="noopener"
