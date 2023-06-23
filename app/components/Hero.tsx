@@ -7,7 +7,7 @@ export default function Hero() {
       </h1>
       {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
       <p className="text-base md:text-xl">
-        My name is Seth Hall and I am Creative Producer/Project Manager with a passion for creative media. You can find me online at{' '}
+        My name is Seth Hall and I am Creative Producer/Web Developer/Project Manager with a passion for creative media. You can find me online at{' '}
         <a
           href="https://www.linkedin.com/in/sethburtonhall/"
           target="_blank"
@@ -17,14 +17,14 @@ export default function Hero() {
           LinkedIn
         </a>
         ,{' '}
-        <a
+{/*         <a
           href="https://www.instagram.com/sethburtonhall/"
           target="_blank"
           rel="noopener"
           className="styled-link"
         >
           Instagram
-        </a>
+        </a> */}
         , or {' '}
         <a
           href="https://twitter.com/sethburtonhall"
