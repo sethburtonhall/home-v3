@@ -18,13 +18,13 @@ let logo = (
 let navigationItems = [
   {
     id: 1,
-    label: 'Creative',
-    href: '/creative',
+    label: 'Web',
+    href: '/web',
   },
   {
     id: 2,
-    label: 'Web',
-    href: '/web',
+    label: 'Creative',
+    href: '/creative',
   },
   // {
   //   id: 3,
