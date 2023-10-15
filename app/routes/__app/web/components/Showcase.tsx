@@ -14,7 +14,7 @@ export default function Showcase({ showcases }: { showcases: repoProps[] }) {
       <div className="card-grid">
         {showcases.map((showcase: repoProps) => {
           return (
-            <div key={showcase.id} className="card flex flex-col">
+            <div key={showcase.id} className="card flex flex-col w-full">
               <CardImage type={showcase} imagePath="showcases" />
               <CardBody type={showcase} tag="showcase" />
               <CardFooter type={showcase} />
