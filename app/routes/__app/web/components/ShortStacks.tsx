@@ -18,7 +18,7 @@ export default function ShortStacks({
       <div className="card-grid">
         {shortstacks.map((shortstack: repoProps) => {
           return (
-            <div key={shortstack.id} className="card flex flex-col">
+            <div key={shortstack.id} className="card flex flex-col w-full">
               <CardImage type={shortstack} imagePath="shortstacks" />
               <CardBody type={shortstack} tag="shortstack" />
               <CardFooter type={shortstack} />
