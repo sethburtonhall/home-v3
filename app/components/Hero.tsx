@@ -33,8 +33,8 @@ export default function Hero() {
           className="styled-link"
         >
           Twitter
-        </a>
-        . {' '} */}
+        </a> */}
+        . {' '} 
       </p>
     </div>
   );
