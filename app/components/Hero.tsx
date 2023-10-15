@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="mx-auto flex w-full flex-col items-center xl:w-2/3">
+    <div className="mx-auto flex w-full flex-col justify-center items-center xl:w-2/3">
       {/* Intro */}
 {/*       <h1 className="mb-6 w-full text-center text-4xl md:text-5xl">
         Lead Frontend Developer
