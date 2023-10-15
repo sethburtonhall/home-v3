@@ -3,11 +3,11 @@ export default function Hero() {
     <div className="mx-auto flex w-full flex-col items-center xl:w-2/3">
       {/* Intro */}
       <h1 className="mb-6 w-full text-center text-4xl md:text-5xl">
-        Hey Y'all!
+        Lead Frontend Developer
       </h1>
       {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
       <p className="text-base md:text-xl">
-        My name is Seth Hall. I am Web Developer and Creative Producer with over 25 years of experience in creative media. You can find me online at{' '}
+        Frontend Developer working in composable. Creative Producer living in sabbatical. Digital Nomad. Journeyman. Over 25 years of experience in creative collaboration. You can find me online at{' '}
         <a
           href="https://www.linkedin.com/in/sethburtonhall/"
           target="_blank"
@@ -25,7 +25,7 @@ export default function Hero() {
         >
           Instagram
         </a> */}
-        {' '} or {' '}
+{/*         {' '} or {' '}
         <a
           href="https://twitter.com/sethburtonhall"
           target="_blank"
@@ -34,7 +34,7 @@ export default function Hero() {
         >
           Twitter
         </a>
-        . {' '}
+        . {' '} */}
       </p>
     </div>
   );
