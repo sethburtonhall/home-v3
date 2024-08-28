@@ -35,7 +35,7 @@ export default function Hero() {
           Twitter
         </a> */}
         . {' '} 
-      </p>
+       </p>
     </div>
   );
 }
