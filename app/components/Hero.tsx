@@ -25,7 +25,7 @@ export default function Hero() {
         >
           Instagram
         </a> */}
-        {' '} or {' '}
+{/*         {' '} or {' '}
         <a
           href="https://twitter.com/sethburtonhall"
           target="_blank"
@@ -33,8 +33,8 @@ export default function Hero() {
           className="styled-link"
         >
           Twitter
-        </a>
-        . {' '}
+        </a> */}
+        . {' '} 
       </p>
     </div>
   );
