@@ -1,13 +1,13 @@
 export default function Hero() {
   return (
-    <div className="mx-auto flex w-full flex-col items-center xl:w-2/3">
+    <div className="flex flex-col items-center w-full mx-auto xl:w-2/3">
       {/* Intro */}
-      <h1 className="mb-6 w-full text-center text-4xl md:text-5xl">
+      <h1 className="w-full mb-6 text-4xl text-center md:text-5xl">
         Hey Y'all!
       </h1>
-      {/* <p className="mb-6 text-center text-xl md:text-2xl">My name is Seth.</p> */}
+      {/* <p className="mb-6 text-xl text-center md:text-2xl">My name is Seth.</p> */}
       <p className="text-base md:text-xl">
-        My name is Seth Hall. I am Web Developer and Creative Producer with over 25 years of experience in creative media. You can find me online at{' '}
+        Seth Hall. Senior Fronend Web Developer working in composable architecture. Creative Producer living in sabatical. Digital Nomad. Over 25 years of experience in creative media. You can find me online at{' '}
         <a
           href="https://www.linkedin.com/in/sethburtonhall/"
           target="_blank"
